@@ -1,6 +1,65 @@
 ---
+import { Image } from "astro:assets";
+import verdensskovelogo from "../assets/images/Verdens-skove.png";
+import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
 ---
+
+<section class="bg-blue-500 text-beige-50 p-sm">
+  <div class="grid grid-cols-2 pb-sm">
+<!-- skov -->
+    <div>
+      <h3>VI GØR EN FORSKEL</h3>
+      <p>
+        Vi tror på at alle kan gøre en forskel – selv en højskole fra Danmark.
+        Vi støtter derfor Verdens Skoves arbejde med bevarelse og bæredygtig
+        brug af verdens skove.
+      </p>
+      <p>
+        Vi har allerede fredet 106.785 m2 regnskov. Dét er vi stolte af i
+        HÖJSKOLENDK.
+      </p>
+    </div>
+    <Image src={verdensskovelogo} alt="Logo skov"></Image>
+   
+  </div>
+
+  <!-- kontakt info -->
+  <div class="grid grid-cols-3 pb-sm">
+    <div>
+      <h5>HÖJSKOLENDK</h5>
+      <p>Rosenørns Allé 29, 1970 Frederiksberg, Danmark</p>
+    </div>
+
+    <div>
+      <h5>KONTAKT</h5>
+      <div class="flex">
+        <p>Telefon:</p>
+        <p>70279007</p>
+      </div>
+      <p>Mandag til Fredag // Kl. 10.00-16.00</p>
+      <div class="flex">
+        <p>Mail:</p>
+        <p>info@hojskolendk.dk</p>
+      </div>
+    </div>
+
 <div>
-<p>Footer - tilføj footerindhold</p>
+    <h5>SAMARBEJDSPARTNERE</h5>
+    <Image src={Samarbejdspartnere} alt="Samarbejdspartnere"></Image>
 </div>
-  
+
+
+  </div>
+
+
+<!-- Copyright -->
+
+<div class="grid grid-cols-3 pb-sm">
+    <p>
+        HÖJSKOLENDK er medlem af Rejsegarantifonden.
+    </p>
+    <p>Copyright © HÖJSKOLENDK 2022 • CVR 32491162</p>
+    <p>Handelsbetingelser / Cookiepolitik  / Data- & Privatlivspolitik </p>
+   
+</div>
+</section>
