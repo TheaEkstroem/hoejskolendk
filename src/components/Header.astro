@@ -1,3 +1,86 @@
 ---
-
+import Link from "../components/Link.astro";
+import { Image } from "astro:assets";
+import Facebook from "../assets/images/ikoner/facebook.webp";
+import Instagram from "../assets/images/ikoner/instagram.webp";
+import Tiktok from "../assets/images/ikoner/tiktok.webp";
 ---
+<section class="flex justify-between items-center w-full bg-beige-500 p-4">
+    <Link href="/" alt="" class="">
+  <h2 class="text-4xl font-bold">HÖJSKOLENDK</h2>
+</Link>
+  <div class="flex flex-row items-center gap-x-s">
+    <Image src={Facebook} alt="Facebook Logo" class="w-8 h-8" />
+    <Image src={Instagram} alt="Instagram Logo" class="w-8 h-8" />
+    <Image src={Tiktok} alt="Tiktok Logo" class="w-8 h-8" />
+  </div>
+
+  <div x-data="{ showmenu: false }" class="relative">
+    <div id="navbar" class="">
+      <button id="burgermenu" class="p-2" x-on:click="showmenu = !showmenu">
+        <svg viewBox="0 0 100 80" width="50" height="50">
+          <rect width="100" height="15" rx="10"></rect>
+          <rect y="30" width="100" height="15" rx="10"></rect>
+          <rect y="60" width="100" height="15" rx="10"></rect>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <nav
+    id="mobilmenu"
+    class="fixed top-0 bottom-0 z-40"
+    x-show="showmenu"
+    x-transition
+    x-on:click="showmenu = false"
+    x-on:click.outside="showmenu = false"
+  >
+    <ul class="flex flex-col h-full justify-center">
+      <div class="gap-8 pt-8 max-w-screen-2xl bg-beige-500">
+        <li><Link href="/oversigt" alt="" class="">Oversigt</Link></li>
+        <li><Link href="/singleview" alt="" class="">Individuel</Link></li>
+        <li><Link href="/forms" alt="" class="">tilmeld</Link></li>
+      </div>
+    </ul>
+  </nav>
+</section> 
+
+
+<!-- first -->
+
+<!-- 
+<section class="flex justify-stretch fixed   w-full bg-beige-500">
+    <h2 class="">HØJSKOLENDK</h2>
+    <div class="flex flex-row items-center gap-s">
+        <Image src={Facebook} alt="Facebook Logo "></Image>
+        <Image src={Instagram} alt="Instagram Logo "></Image>
+        <Image src={Tiktok} alt="Tiktok Logo "></Image>
+    </div>
+
+<div x-data="{ showmenu: false }" class="w-full bg-beige-500" >    
+<div id="navbar" class="">
+    <button id="burgermenu" class="" x-on:click="showmenu = ! showmenu">
+        <svg viewBox="0 0 100 80" width="40" height="40">
+            <rect width="100" height="15" rx="10"></rect>
+            <rect y="30" width="100" height="15" rx="10"></rect>
+            <rect y="60" width="100" height="15" rx="10"></rect>
+          </svg>
+
+      </button>
+</div>
+<nav id="mobilmenu" class="fixed top-0 bottom-0 right-0 left-0 z-40" 
+x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+    <ul class="flex flex-col h-full justify-center [&_li]:text-center [&_li]:py-2 [&_li]:list-none">
+        <div class="gap-8 pt-4 max-w-screen-md mx-auto  bg-beige-500">
+			<li><Link href="#mangesektioner" alt="">Oversigt</Link></li>
+			<li><Link href="#videoscrubber" alt="">Individuel</Link></li>
+			<li><Link href="#progressbar" alt="">tilmeld</Link></li>
+		</div>
+    </ul>
+</nav>
+</div>
+
+
+
+
+</section> -->
