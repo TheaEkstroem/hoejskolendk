@@ -4,8 +4,8 @@ import verdensskovelogo from "../assets/images/Verdens-skove.png";
 import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
 ---
 
-<section class="bg-blue-500 text-beige-50 p-sm">
-  <div class="grid grid-cols-2 pb-sm">
+<section class="bg-blue-500 text-beige-50 p-xs md:p-sm">
+  <div class="grid md:grid-cols-2 pb-sm">
 <!-- skov -->
     <div>
       <h3>VI GØR EN FORSKEL</h3>
@@ -19,18 +19,23 @@ import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
         HÖJSKOLENDK.
       </p>
     </div>
+    <div class="flex items-center justify-center pt-s">
     <Image src={verdensskovelogo} alt="Logo skov"></Image>
-   
+</div>
+
   </div>
 
   <!-- kontakt info -->
-  <div class="grid grid-cols-3 pb-sm">
-    <div>
+  <div class="flex flex-wrap justify-between	pb-sm">
+    <div class="pb-s w-fit">
       <h5>HÖJSKOLENDK</h5>
-      <p>Rosenørns Allé 29, 1970 Frederiksberg, Danmark</p>
+      <p>Rosenørns Allé 29,</p>
+      <p>1970 Frederiksberg, </p>
+      <p>Danmark</p>
+    
     </div>
 
-    <div>
+    <div class="pb-s">
       <h5>KONTAKT</h5>
       <div class="flex">
         <p>Telefon:</p>
@@ -48,18 +53,16 @@ import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
     <Image src={Samarbejdspartnere} alt="Samarbejdspartnere"></Image>
 </div>
 
-
   </div>
 
-
+<hr class="p-xxs">
 <!-- Copyright -->
-
-<div class="grid grid-cols-3 pb-sm">
+<div class="flex flex-wrap justify-between		 pb-sm">
     <p>
         HÖJSKOLENDK er medlem af Rejsegarantifonden.
     </p>
-    <p>Copyright © HÖJSKOLENDK 2022 • CVR 32491162</p>
     <p>Handelsbetingelser / Cookiepolitik  / Data- & Privatlivspolitik </p>
-   
+    <p class="">Copyright © HÖJSKOLENDK 2022 • CVR 32491162</p>
+
 </div>
 </section>
