@@ -1,7 +1,18 @@
 ---
 import { Image } from "astro:assets";
-import verdensskovelogo from "../assets/images/Verdens-skove.png";
-import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
+import verdensskovelogo from "../assets/images/ikoner/Verdens-skove.webp";
+import Samarbejdspartnere from "../assets/images/ikoner/Samarbejdspartnere.webp";
+import Facebook from "../assets/images/ikoner/facebookfooter.webp";
+import Instagram from "../assets/images/ikoner/instagramfooter.webp";
+import Youtube from "../assets/images/ikoner/youtubefooter.webp";
+import Tiktok from "../assets/images/ikoner/tiktokfooter.webp";
+
+import Linkedin from "../assets/images/ikoner/linkedin.webp";
+import Mail from "../assets/images/ikoner/mail.webp";
+import Skype from "../assets/images/ikoner/skype.webp";
+
+
+
 ---
 
 <section class="bg-blue-500 text-beige-50 p-xs md:p-sm">
@@ -27,12 +38,17 @@ import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
 
   <!-- kontakt info -->
   <div class="flex flex-wrap justify-between	pb-sm">
-    <div class="pb-s w-fit">
+    <div class="pb-s ">
       <h5>HÖJSKOLENDK</h5>
       <p>Rosenørns Allé 29,</p>
       <p>1970 Frederiksberg, </p>
       <p>Danmark</p>
-    
+      <div class="flex gap-xs">
+        <Image src={Facebook} alt="Facebook Logo "></Image>
+        <Image src={Instagram} alt="Instagram Logo "></Image>
+        <Image src={Youtube} alt="Youtube Logo "></Image>
+        <Image src={Tiktok} alt="Tiktok Logo "></Image>
+      </div>
     </div>
 
     <div class="pb-s">
@@ -45,6 +61,11 @@ import Samarbejdspartnere from "../assets/images/Samarbejdspartnere.webp";
       <div class="flex">
         <p>Mail:</p>
         <p>info@hojskolendk.dk</p>
+      </div>
+      <div class="flex gap-xs pt-xxs">
+        <Image src={Mail} alt="Mail Logo "></Image>
+        <Image src={Skype} alt="Skype Logo "></Image>
+        <Image src={Linkedin} alt="Linkedin Logo "></Image>
       </div>
     </div>
 
