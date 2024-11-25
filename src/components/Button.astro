@@ -1,5 +1,25 @@
 ---
+export interface Props {
+  label: string; // Text displayed on the button
+  variant: "desktop_dark_orange" | "desktop_light_orange" | "desktop_blue"; // Three button styles
+  href?: string; // Optional: Use for links
+}
+
+// Destructure Props
+const { label, variant, href = "#" } = Astro.props;
 ---
-<div>
-    <button class="border-2 border-black"><slot /></button>
-</div>
+
+<a
+  href={href}
+  class={
+    variant === "desktop_dark_orange"
+      ? "bg-orange-500 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-lg font-bold text-sm sm:text-base hover:bg-orange-400 transition"
+      : variant === "desktop_light_orange"
+      ? "bg-orange-400 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-lg font-bold text-sm sm:text-base hover:bg-orange-300 transition flex items-center gap-xxs sm:gap-xs"
+      : variant === "desktop_blue"
+      ? "bg-blue-500 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-lg font-bold text-sm sm:text-base hover:bg-blue-400 transition"
+      : ""
+  }
+>
+  {label}
+</a>
