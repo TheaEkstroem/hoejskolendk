@@ -85,10 +85,11 @@ export default {
           },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
-        // fontFamily: {
-        //     sans: ['Prompt', 'sans-serif'],
-        //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
-        // },
+     fontFamily: {
+     'display': ['think', 'sans serif'], /* eksempel på ekstra font */
+     montserrat: ['Montserrat', 'sans-serif'],
+     'open-sans': ['Open Sans', 'sans-serif'],
+      },
 
         /* Tilføj dit typografiske hierarki herunder */
         // fontSize: {
@@ -97,9 +98,12 @@ export default {
         //   },
 
         /* Tilføj dit fontvægt-hierarki nedenfor */
-        //   fontWeight: {
-        //     regular: '400',
-        //   },
+          fontWeight: {
+thin:'300',
+            regular: '400',
+            semibold: '600',
+            bold: '700',
+          },
 
         /* Borders - borderstørrelser herunder */
         // borderWidth: {
@@ -153,6 +157,7 @@ export default {
         // },
 
         /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
+      
         // fontFamily: {
         //     sans: ['Prompt', 'sans-serif'],
         //     'display': ['Courier', 'monospace'], /* eksempel på ekstra font */
