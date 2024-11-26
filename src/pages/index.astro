@@ -7,6 +7,10 @@ import Intromoede from "../components/Intromoede.astro";
 import Underviser from "../components/underviser.astro";
 import Logotrustpilot from "../assets/images/trustpilot-logo.webp";
 import Trustpilot from "../components/trustpilot.astro";
+import piger from "../assets/images/piger.webp";
+import Badeferie from "../assets/images/badeferie.webp";
+import Dykker from "../assets/images/dykker.webp";
+
 ---
 
 
@@ -30,35 +34,32 @@ import Trustpilot from "../components/trustpilot.astro";
   </section>
 
   <!-- DIT LIVS EVENTYR! -->
-  <section class="bg-beige-500 p-xl">
-    <div class="grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-s">
-      <div class="bg-beige-200 p-s rounded-md">
-        <h1>DIT LIVS EVENTYR!</h1>
-        <p>
-          HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-          brænder for oplevelser, fællesskab og mødet med nye mennesker og
-          kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-        </p>
-        <p>
-          HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er
-          vild med højskole-fællesskab, vil med på et fantastisk rejseeventyr,
-          glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk,
-          drømmer om en fed grupperejse med andre skønne unge, vil opleve et
-          stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.
-          Du er sikker på en tryg rejseoplevelse da vi er medlem af
-          Rejsegarantifonden.
-        </p>
-        <p class="text-orange-500">Vi glæder os til at lære DIG at kende!</p>
-      </div>
-
-      <div class="">
-        <img
-          src="/src/assets/images/piger.webp"
-          alt="To unge kvinder i en mark"
-          class="max-w-sm"
-        />
-      </div>
-    </div>
+  <section class="bg-beige-500 p-ml pt-xl">
+	<div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
+	  <div
+		class=" bg-beige-300 border border-black-50 rounded-md px-sm"
+	  >
+		<h2 class="pt-s">DIT LIVS EVENTYR!</h2>
+		<p class="md:pt-ml pt-xs">
+		  HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
+		  brænder for oplevelser, fællesskab og mødet med nye mennesker og
+		  kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+		</p>
+		<p class="pt-xs">
+		  HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og
+		  er vild med højskole-fællesskab, vil med på et fantastisk
+		  rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse
+		  med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil
+		  opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld
+		  undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem
+		  af Rejsegarantifonden.
+		</p>
+		<p class="text-orange-500 md:py-ml py-xs ">
+		  Vi glæder os til at lære DIG at kende!
+		</p>
+	  </div>
+	  <Image src={piger} alt="Piger der smiler på højskolen" class="md:max-w-lg" />
+	</div>
   </section>
 
 
@@ -181,6 +182,73 @@ import Trustpilot from "../components/trustpilot.astro";
 	/>
   </div>
 </section>
+
+<!-- REJSE HØJSKOLE + HØJSKOLEOPHOLD I UDLANDET -->
+<section class="bg-beige-500 p-ml pt-xl">
+
+	<div class="p-sm grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-ml">
+		<Image src={Badeferie} alt="Piger der smiler på højskolen" class="md:max-w-md" />
+	  <div
+		class=" bg-beige-300 border border-black-50 rounded-md px-sm"
+	  >
+		<h2 class="pt-s">REJSE HØJSKOLE</h2>
+		<p class="md:pt-m pt-s">
+			Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet, med et stærkt sammen-hold og fede rejseoplevelser. Med udgangspunkt i højskolens to grundværdier fællesskab og dannelse, kan du på højskole i udlandet bruge din sabbatår rejse  på fx frivilligt arbejde, vilde adventure- og naturoplevelser, lære sprog og spændende personlig udvikling der giver dig mere selvtillid, selvindsigt og selvværd. Glæd dig også til inspirerende undervisning, der levende og aktivt forener det lærende med det legende.
+		</p>
+		<p class="pt-s">
+			Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser med noget på hjerte”. Udover det fantastiske rejseeventyr handler vores højskoleophold i udlandet om dine drømme, mål og ønsker for livet. På inspirerende og aktiv vis flytter du dine grænser og bliver en endnu stærkere udgave af dig selv. Vi tror på, at du kommer hjem med mere mod på alt hvad livet byder dig og er mere afklaret omkring hvad en meningsfuld fremtid er for dig.
+		</p>
+		<p class="py-s ">
+			Tag på højskole i udlandet hvis du har du lyst til at opleve verden, udleve dine rejsedrømme i et skønt fællesskab, blive inspireret af dygtige og engagerede undervisere og få et eventyr for livet.		</p>
+	  </div>
+	</div>
+
+
+
+	<div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
+	  <div
+		class=" bg-beige-300 border border-black-50 rounded-md px-sm"
+	  >
+		<h2 class="pt-s">HØJSKOLEOPHOLD I UDLANDET</h2>
+		<p class="md:pt-m pt-s">
+			Når du rejser på højskole i udlandet med HÖJSKOLENDK.
+		</p>
+		
+		<ul class="py-s ">
+            <li >
+              <span class="text-orange-500">›</span> Bliver du en del af et fantastisk
+              fællesskab med et stærkt sammenhold
+            </li>
+            <li>
+              <span class="text-orange-500">›</span> Får du masser af vilde naturoplevelser,
+              adventure og spændende kulturmøder
+            </li>
+            <li>
+              <span class="text-orange-500">›</span> Opdager du nye og stærke sider
+              af dig selv, flytter grænser og får mere selvtillid
+            </li>
+            <li>
+              <span class="text-orange-500">›</span> Rejser du altid med danske passionerede
+              rejseledere og engagerede undervisere
+            </li>
+            <li>
+              <span class="text-orange-500">›</span> Får du et uforglemmeligt, unikt
+              og trygt rejseeventyr for livet
+            </li>
+          </ul>
+
+		<p class="py-s ">
+			Gå på opdagelse her på siden efter dit livs eventyr – på højskole i udlandet med HÖJSKOLENDK.
+		</p>
+		<p class="py-s ">
+			Med vores unikke kombination af højskole, grupperejser, rejseeventyr, frihed, kulturmøder og spændende undervisning, vil vi inspirere dig til at finde ind til hvad der er vigtigst for dig i livet – hvad du virkeligt brænder for og kan mærke er meningsfuldt – så du kan forfølge dine drømme.		</p>
+	  </div>
+	  <Image src={Dykker} alt="Piger der smiler på højskolen" class="md:max-w-md" />
+
+	</div>
+
+
+  </section>
 
 
     <!-- underviser -->
