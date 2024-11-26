@@ -1,0 +1,19 @@
+---
+import { Image } from "astro:assets";
+const {
+  underviserfoto = "",
+  underviserfotoalt = "",
+  undervisernavn = "",
+  underviserinfo = "",
+} = Astro.props;
+---
+
+<section>
+  <img
+    src={underviserfoto}
+    alt={underviserfotoalt}
+    class="object-cover"
+  />
+  <h5>{undervisernavn}</h5>
+  <p class="text-black-300">{underviserinfo}</p>
+</section>
