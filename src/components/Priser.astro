@@ -1,13 +1,22 @@
 ---
 import Button from "../components/Button.astro"; // Import button component
 
-export interface Props {
+/* export interface Props {
   label: string; // Text displayed on the button
   variant: "desktop_dark_orange" | "desktop_light_orange" | "desktop_blue"; // Three button styles
   href?: string; // Optional: Use for links
-}
-const { destination, pris, varighed, Introdage, Måned1, Måned2, Måned3 } =
-  Astro.props;
+} */
+
+const {
+  destination = "",
+  pris = "",
+  varighed = "",
+  Introdage = "",
+  Måned1 = "",
+  Måned2 = "",
+  Måned3 = "",
+} = Astro.props;
+
 ---
 
 <!-- Content -->
