@@ -1,5 +1,12 @@
 ---
+import Button from "../components/Button.astro"; // Import button component
 
+export interface Props {
+  label: string; // Text displayed on the button
+  variant: "desktop_dark_orange" | "desktop_light_orange" | "desktop_blue"; // Three button styles
+  href?: string; // Optional: Use for links
+}
+const { label, variant, href = "#" } = Astro.props;
 ---
 
 <!-- Content -->
@@ -48,6 +55,17 @@
             </li>
           </ul>
         </p>
+
+        <!-- Tilføjelse af knapper-->
+        <div class="mt-6 flex gap-4">
+          <Button
+            label="Notifikationer om opholdet"
+            variant="desktop_dark_orange"
+            href="#"
+          />
+          <Button label="Infomøde" variant="desktop_light_orange" href="#" />
+          <Button label="Læs mere" variant="desktop_blue" href="#" />
+        </div>
       </div>
 
       <!-- Image Section -->
