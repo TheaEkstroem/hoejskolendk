@@ -1,0 +1,72 @@
+---
+const {
+  elevfoto = "",
+  elevalt = "",
+  elevnavn = "",
+  dato ="",
+  elevanmeldelse = "",
+} = Astro.props;
+---
+
+<section class="border border-black-50  rounded-md  p-sm w-[330px]">
+  <div class="flex flex-row gap-x-xxs ">
+    <img src={elevfoto} alt={elevalt} class="object-cover w-ml h-ml" />
+    <div class="flex flex-col">
+      <h5>{elevnavn}</h5>
+      <p class="text-black-300">{dato}</p>
+    </div>
+  </div>
+  <!-- stjerner -->
+
+  <div class="flex flex-row">
+    <!-- 1 -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="70" height="70">
+        <polygon 
+          points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+          fill="gold" 
+          stroke="goldenrod" 
+          stroke-width="0"
+        />
+      </svg>
+      <!-- 2 -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="70" height="70">
+        <polygon 
+          points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+          fill="gold" 
+          stroke="goldenrod" 
+          stroke-width="0"
+        />
+      </svg>
+      <!-- 3 -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="70" height="70">
+        <polygon 
+          points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+          fill="gold" 
+          stroke="goldenrod" 
+          stroke-width="0"
+        />
+      </svg>
+      <!-- 4 -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="70" height="70">
+        <polygon 
+          points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+          fill="gold" 
+          stroke="goldenrod" 
+          stroke-width="0"
+        />
+      </svg>
+      <!-- 5 -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="70" height="70">
+        <polygon 
+          points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+          fill="gold" 
+          stroke="goldenrod" 
+          stroke-width="0"
+        />
+      </svg>
+  </div>
+  <p class=""  >{elevanmeldelse}</p>
+
+  
+
+</section>

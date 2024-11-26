@@ -1,10 +1,14 @@
 ---
+import { Image } from "astro:assets";
+
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Intromoede from "../components/Intromoede.astro";
 import Underviser from "../components/underviser.astro";
-
+import Logotrustpilot from "../assets/images/trustpilot-logo.webp";
+import Trustpilot from "../components/trustpilot.astro";
 ---
+
 
 <MainLayout title="Højskolendk">
   <!-- LANDING SEKTION -->
@@ -57,6 +61,126 @@ import Underviser from "../components/underviser.astro";
     </div>
   </section>
 
+
+   <!-- trustpilot -->
+   <section>
+	<div class="flex flex-col items-center p-sm ">
+		<h2>Andmeldelser fra tidligere højskoleelever</h2>
+  <Image src={Logotrustpilot} alt="TrustpilotLogo" class="md:-mt-2xl -mt-sm w-[140px] md:w-[221px]" />
+</div>
+<div class="flex flex-row items-center justify-center space-x-s md:-mt-5xl -mt-ml">
+<h4 >4,8</h4>
+<!-- stjerner -->
+<div class="flex flex-row">
+<!-- 1 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
+	<polygon 
+	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+	  fill="gold" 
+	  stroke="goldenrod" 
+	  stroke-width="0"
+	/>
+  </svg>
+  <!-- 2 -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
+	<polygon 
+	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+	  fill="gold" 
+	  stroke="goldenrod" 
+	  stroke-width="0"
+	/>
+  </svg>
+  <!-- 3 -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
+	<polygon 
+	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+	  fill="gold" 
+	  stroke="goldenrod" 
+	  stroke-width="0"
+	/>
+  </svg>
+  <!-- 4 -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
+	<polygon 
+	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+	  fill="gold" 
+	  stroke="goldenrod" 
+	  stroke-width="0"
+	/>
+  </svg>
+  <!-- 5 -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
+	<polygon 
+	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
+	  fill="gold" 
+	  stroke="goldenrod" 
+	  stroke-width="0"
+	/>
+  </svg>
+</div>
+<h4 >(100)</h4>
+</div>
+
+<!--       <div class="grid md:grid-cols-4 gap-x-s p-ml">
+-->        <!-- william -->
+<div class="trust grid md:grid-cols-4 gap-x-s p-ml overflow-x-auto md:overflow-visible">
+
+	<Trustpilot
+	  elevfoto="Card/william.png"
+	  ,
+	  elevalt="William D. Birch profilbillede"
+	  ,
+	  elevnavn="William D. Birch"
+	  ,
+	  dato="22 jun. 2024"
+	  ,
+	  elevanmeldelse="Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart anbefale Höjskolendk. Jeg havde den fedeste tur fra Januar til april måned i 2024 på turen som hedder, Hawaii, Australien, Japan, Bali og Gili."
+	  ,
+	/>
+
+	<!-- mikkel  -->
+	<Trustpilot
+	  elevfoto="Card/mikkel.png"
+	  ,
+	  elevalt="Mikkel profilbillede"
+	  ,
+	  elevnavn="Mikkel Berg"
+	  ,
+	  dato="20 jun. 2024"
+	  ,
+	  elevanmeldelse="Jeg var på turen Hawaii, Australien, Japan, Bali og Gili i foråret 2024 - sikke en oplevelse! Selve rejsen var godt planlagt med fede aktiviteter og udflugter, som man ikke nødvendigvis kunnet ha’ arrangeret, hvis man rejste på egen hånd."
+	  ,
+	/>
+
+	<!-- Dicte Jørgensen -->
+	<Trustpilot
+	  elevfoto="Card/dicte.png"
+	  ,
+	  elevalt="Dicte Jørgensen profilbillede"
+	  ,
+	  elevnavn="Dicte Jørgensen"
+	  ,
+	  dato="20 jun. 2024"
+	  ,
+	  elevanmeldelse="At have rejst verden rundt med höjskolendk, har uden tvivl været en af de bedste beslutninger nogensinde! At rejse rundt med så mange unge mennesker, og nogle fantastiske rejseledere gør, at man ser verden og de forskellige kulturer på en helt anden måde."
+	  ,
+	/>
+
+	<!--  -->
+	<Trustpilot
+	  elevfoto="Card/signe.png"
+	  ,
+	  elevalt="Signe N. Christensen profilbillede"
+	  ,
+	  elevnavn="Signe Christensen"
+	  ,
+	  dato="20 jun. 2024"
+	  ,
+	  elevanmeldelse="Höjskolendk giver en tryg og sikker rejseform. Man har altid sine rejseledere at læne sig op ad, hvilket er skønt når man ikke har særlig meget erfaring med verden uden for Danmark. På samme tid skaber man venskaber for livet, som virkelig er en gave i sig selv!"
+	  ,
+	/>
+  </div>
+</section>
 
 
     <!-- underviser -->
@@ -218,4 +342,29 @@ import Underviser from "../components/underviser.astro";
   
 
 	  <Intromoede />
+
+
+
+
 </MainLayout>
+
+<style>
+	/* Flexbox horisontal scrol mobile og tablet*/
+		.trust {
+  display: flex; 
+  gap: 1rem;
+  overflow-x: auto; 
+  scrollbar-width: thin; 
+  -webkit-overflow-scrolling: touch; 
+  padding-bottom: 1rem; 
+}
+
+/* desktop*/
+@media (min-width: 1298px) {
+  .trust {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    overflow-x: visible; 
+  }
+}
+</style>
