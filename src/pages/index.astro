@@ -5,69 +5,55 @@ import Intromoede from "../components/Intromoede.astro";
 ---
 
 <MainLayout title="Højskolendk">
-	<!-- LANDING SEKTION -->
-	<section
-	  class="relative w-full h-screen bg-cover bg-center"
-	  style="background-image: url('/src/assets/images/velkommen.webp');"
-	>
-	
-<div class="relative z-10 flex flex-col items-center">
-	<h1 class="mt-m">
-	  HÖJSKOLENDK
-	</h1>
-  </div>
+  <!-- LANDING SEKTION -->
+  <section
+    class="relative w-full h-screen bg-cover bg-center"
+    style="background-image: url('/src/assets/images/velkommen.webp');"
+  >
+    <div class="relative z-10 flex flex-col items-center">
+      <h1 class="mt-m">HÖJSKOLENDK</h1>
+    </div>
 
-  <div class="relative z-10 flex flex-col items-start justify-center ml-lg mt-2xl">
-	<p class="mb-xs">
-	  En rejse for dig og din fremtid - Starter her!
-	</p>
-  
-	<Button
-	  label="FIND DIN REJSE »"
-	  variant="desktop_dark_orange"
-	  href="#"
-	/>
-  </div>
-  
-  
-	</section>
-	  
+    <div
+      class="relative z-10 flex flex-col items-start justify-center ml-lg mt-2xl"
+    >
+      <p class="mb-xs">En rejse for dig og din fremtid - Starter her!</p>
 
-	<!-- DIT LIVS EVENTYR! -->
-	<section class="bg-beige-500 p-xl">
-		<div class="grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-s">
+      <Button label="FIND DIN REJSE »" variant="desktop_dark_orange" href="#" />
+    </div>
+  </section>
 
-		  <div class="bg-beige-200 p-s rounded-md">
-			<h1>DIT LIVS EVENTYR!</h1>
-			<p>
-			  HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-			  brænder for oplevelser, fællesskab og mødet med nye mennesker og
-			  kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-			</p>
-			<p>
-			  HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er
-			  vild med højskole-fællesskab, vil med på et fantastisk rejseeventyr,
-			  glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk,
-			  drømmer om en fed grupperejse med andre skønne unge, vil opleve et
-			  stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.
-			  Du er sikker på en tryg rejseoplevelse da vi er medlem af
-			  Rejsegarantifonden.
-			</p>
-			<p class="text-orange-500">
-			  Vi glæder os til at lære DIG at kende!
-			</p>
-		  </div>
-		  
-		  <div class="">
-			<img
-			  src="/src/assets/images/piger.webp"
-			  alt="To unge kvinder i en mark"
-			  class="max-w-sm"
-			/>
-		  </div>
-		</div>
-	  </section>
-			
+  <!-- DIT LIVS EVENTYR! -->
+  <section class="bg-beige-500 p-xl">
+    <div class="grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-s">
+      <div class="bg-beige-200 p-s rounded-md">
+        <h1>DIT LIVS EVENTYR!</h1>
+        <p>
+          HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
+          brænder for oplevelser, fællesskab og mødet med nye mennesker og
+          kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+        </p>
+        <p>
+          HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er
+          vild med højskole-fællesskab, vil med på et fantastisk rejseeventyr,
+          glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk,
+          drømmer om en fed grupperejse med andre skønne unge, vil opleve et
+          stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.
+          Du er sikker på en tryg rejseoplevelse da vi er medlem af
+          Rejsegarantifonden.
+        </p>
+        <p class="text-orange-500">Vi glæder os til at lære DIG at kende!</p>
+      </div>
 
-	<Intromoede />
+      <div class="">
+        <img
+          src="/src/assets/images/piger.webp"
+          alt="To unge kvinder i en mark"
+          class="max-w-sm"
+        />
+      </div>
+    </div>
+  </section>
+
+  <Intromoede />
 </MainLayout>
