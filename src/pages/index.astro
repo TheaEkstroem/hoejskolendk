@@ -10,9 +10,12 @@ import Trustpilot from "../components/trustpilot.astro";
 import piger from "../assets/images/piger.webp";
 import Badeferie from "../assets/images/badeferie.webp";
 import Dykker from "../assets/images/dykker.webp";
-
+import Teambuild from "../assets/images/teambuild.png";
+import Friuger from "../assets/images/friuger.png";
+import Naturoplevelser from "../assets/images/naturoplevelse.png";
+import Kultur from "../assets/images/kultur.png";
+import Friviligt from "../assets/images/friviligtarbejde.png";
 ---
-
 
 <MainLayout title="Højskolendk">
   <!-- LANDING SEKTION -->
@@ -35,35 +38,36 @@ import Dykker from "../assets/images/dykker.webp";
 
   <!-- DIT LIVS EVENTYR! -->
   <section class="bg-beige-500 p-ml pt-xl">
-	<div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
-	  <div
-		class=" bg-beige-300 border border-black-50 rounded-md px-sm"
-	  >
-		<h2 class="pt-s">DIT LIVS EVENTYR!</h2>
-		<p class="md:pt-ml pt-xs">
-		  HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
-		  brænder for oplevelser, fællesskab og mødet med nye mennesker og
-		  kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
-		</p>
-		<p class="pt-xs">
-		  HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og
-		  er vild med højskole-fællesskab, vil med på et fantastisk
-		  rejseeventyr, glæder dig til at lære om fremmede kulturer, vil rejse
-		  med rygsæk, drømmer om en fed grupperejse med andre skønne unge, vil
-		  opleve et stærkt sammenhold og ønsker inspirerende og meningsfuld
-		  undervisning. Du er sikker på en tryg rejseoplevelse da vi er medlem
-		  af Rejsegarantifonden.
-		</p>
-		<p class="text-orange-500 md:py-ml py-xs ">
-		  Vi glæder os til at lære DIG at kende!
-		</p>
-	  </div>
-	  <Image src={piger} alt="Piger der smiler på højskolen" class="md:max-w-lg" />
-	</div>
+    <div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
+      <div class="bg-beige-300 border border-black-50 rounded-md px-sm">
+        <h2 class="pt-s">DIT LIVS EVENTYR!</h2>
+        <p class="md:pt-ml pt-xs">
+          HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
+          brænder for oplevelser, fællesskab og mødet med nye mennesker og
+          kulturer; derfor laver vi eventyrlige højskoleophold i udlandet.
+        </p>
+        <p class="pt-xs">
+          HÖJSKOLENDK er noget for dig, hvis du vil på højskole i udlandet og er
+          vild med højskole-fællesskab, vil med på et fantastisk rejseeventyr,
+          glæder dig til at lære om fremmede kulturer, vil rejse med rygsæk,
+          drømmer om en fed grupperejse med andre skønne unge, vil opleve et
+          stærkt sammenhold og ønsker inspirerende og meningsfuld undervisning.
+          Du er sikker på en tryg rejseoplevelse da vi er medlem af
+          Rejsegarantifonden.
+        </p>
+        <p class="text-orange-500 md:py-ml py-xs">
+          Vi glæder os til at lære DIG at kende!
+        </p>
+      </div>
+      <Image
+        src={piger}
+        alt="Piger der smiler på højskolen"
+        class="md:max-w-lg"
+      />
+    </div>
   </section>
 
-
-<!-- infomøde -->
+  <!-- infomøde -->
   <section class="bg-beige-500 py-lg">
     <h1 class="text-center">INFOMØDE</h1>
     <div class="px-6xl">
@@ -133,387 +137,606 @@ import Dykker from "../assets/images/dykker.webp";
               </p>
             </p>
           </div>
-		
         </div>
-		<hr class="" />
+        <hr class="" />
       </div>
-      <div class="flex place-content-end pt-sm" >
-      <Button label="TILMELD DIG HER" variant="desktop_light_orange" href="#" />
-    </div>
+      <div class="flex place-content-end pt-sm">
+        <Button
+          label="TILMELD DIG HER"
+          variant="desktop_light_orange"
+          href="#"
+        />
+      </div>
     </div>
   </section>
 
+  <!-- trustpilot -->
+  <section>
+    <div class="flex flex-col items-center p-sm">
+      <h2>Andmeldelser fra tidligere højskoleelever</h2>
+      <Image
+        src={Logotrustpilot}
+        alt="TrustpilotLogo"
+        class="md:-mt-2xl -mt-sm w-[140px] md:w-[221px]"
+      />
+    </div>
+    <div
+      class="flex flex-row items-center justify-center space-x-s md:-mt-5xl -mt-ml"
+    >
+      <h4>4,8</h4>
+      <!-- stjerner -->
+      <div class="flex flex-row">
+        <!-- 1 -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-m h-m md:w-xl md:h-xl"
+        >
+          <polygon
+            points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39"
+            fill="gold"
+            stroke="goldenrod"
+            stroke-width="0"></polygon>
+        </svg>
+        <!-- 2 -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-m h-m md:w-xl md:h-xl"
+        >
+          <polygon
+            points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39"
+            fill="gold"
+            stroke="goldenrod"
+            stroke-width="0"></polygon>
+        </svg>
+        <!-- 3 -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-m h-m md:w-xl md:h-xl"
+        >
+          <polygon
+            points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39"
+            fill="gold"
+            stroke="goldenrod"
+            stroke-width="0"></polygon>
+        </svg>
+        <!-- 4 -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-m h-m md:w-xl md:h-xl"
+        >
+          <polygon
+            points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39"
+            fill="gold"
+            stroke="goldenrod"
+            stroke-width="0"></polygon>
+        </svg>
+        <!-- 5 -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 100 100"
+          class="w-m h-m md:w-xl md:h-xl"
+        >
+          <polygon
+            points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39"
+            fill="gold"
+            stroke="goldenrod"
+            stroke-width="0"></polygon>
+        </svg>
+      </div>
+      <h4>(100)</h4>
+    </div>
 
-   <!-- trustpilot -->
-   <section>
-	<div class="flex flex-col items-center p-sm ">
-		<h2>Andmeldelser fra tidligere højskoleelever</h2>
-  <Image src={Logotrustpilot} alt="TrustpilotLogo" class="md:-mt-2xl -mt-sm w-[140px] md:w-[221px]" />
-</div>
-<div class="flex flex-row items-center justify-center space-x-s md:-mt-5xl -mt-ml">
-<h4 >4,8</h4>
-<!-- stjerner -->
-<div class="flex flex-row">
-<!-- 1 -->
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
-	<polygon 
-	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
-	  fill="gold" 
-	  stroke="goldenrod" 
-	  stroke-width="0"
-	/>
-  </svg>
-  <!-- 2 -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
-	<polygon 
-	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
-	  fill="gold" 
-	  stroke="goldenrod" 
-	  stroke-width="0"
-	/>
-  </svg>
-  <!-- 3 -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
-	<polygon 
-	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
-	  fill="gold" 
-	  stroke="goldenrod" 
-	  stroke-width="0"
-	/>
-  </svg>
-  <!-- 4 -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
-	<polygon 
-	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
-	  fill="gold" 
-	  stroke="goldenrod" 
-	  stroke-width="0"
-	/>
-  </svg>
-  <!-- 5 -->
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-m h-m md:w-xl md:h-xl" >
-	<polygon 
-	  points="50,5 61,39 98,39 68,59 79,91 50,72 21,91 32,59 2,39 39,39" 
-	  fill="gold" 
-	  stroke="goldenrod" 
-	  stroke-width="0"
-	/>
-  </svg>
-</div>
-<h4 >(100)</h4>
-</div>
+    <!--       <div class="grid md:grid-cols-4 gap-x-s p-ml">
+-->
+    <!-- william -->
+    <div
+      class="trust grid md:grid-cols-4 gap-x-s p-ml overflow-x-auto md:overflow-visible"
+    >
+      <Trustpilot
+        elevfoto="Card/william.png"
+        ,
+        elevalt="William D. Birch profilbillede"
+        ,
+        elevnavn="William D. Birch"
+        ,
+        dato="22 jun. 2024"
+        ,
+        elevanmeldelse="Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart anbefale Höjskolendk. Jeg havde den fedeste tur fra Januar til april måned i 2024 på turen som hedder, Hawaii, Australien, Japan, Bali og Gili."
+        ,
+      />
 
-<!--       <div class="grid md:grid-cols-4 gap-x-s p-ml">
--->        <!-- william -->
-<div class="trust grid md:grid-cols-4 gap-x-s p-ml overflow-x-auto md:overflow-visible">
+      <!-- mikkel  -->
+      <Trustpilot
+        elevfoto="Card/mikkel.png"
+        ,
+        elevalt="Mikkel profilbillede"
+        ,
+        elevnavn="Mikkel Berg"
+        ,
+        dato="20 jun. 2024"
+        ,
+        elevanmeldelse="Jeg var på turen Hawaii, Australien, Japan, Bali og Gili i foråret 2024 - sikke en oplevelse! Selve rejsen var godt planlagt med fede aktiviteter og udflugter, som man ikke nødvendigvis kunnet ha’ arrangeret, hvis man rejste på egen hånd."
+        ,
+      />
 
-	<Trustpilot
-	  elevfoto="Card/william.png"
-	  ,
-	  elevalt="William D. Birch profilbillede"
-	  ,
-	  elevnavn="William D. Birch"
-	  ,
-	  dato="22 jun. 2024"
-	  ,
-	  elevanmeldelse="Hvis man gerne vil ud og rejse, men også vil møde nogle nye mennesker. Så vil jeg helt klart anbefale Höjskolendk. Jeg havde den fedeste tur fra Januar til april måned i 2024 på turen som hedder, Hawaii, Australien, Japan, Bali og Gili."
-	  ,
-	/>
+      <!-- Dicte Jørgensen -->
+      <Trustpilot
+        elevfoto="Card/dicte.png"
+        ,
+        elevalt="Dicte Jørgensen profilbillede"
+        ,
+        elevnavn="Dicte Jørgensen"
+        ,
+        dato="20 jun. 2024"
+        ,
+        elevanmeldelse="At have rejst verden rundt med höjskolendk, har uden tvivl været en af de bedste beslutninger nogensinde! At rejse rundt med så mange unge mennesker, og nogle fantastiske rejseledere gør, at man ser verden og de forskellige kulturer på en helt anden måde."
+        ,
+      />
 
-	<!-- mikkel  -->
-	<Trustpilot
-	  elevfoto="Card/mikkel.png"
-	  ,
-	  elevalt="Mikkel profilbillede"
-	  ,
-	  elevnavn="Mikkel Berg"
-	  ,
-	  dato="20 jun. 2024"
-	  ,
-	  elevanmeldelse="Jeg var på turen Hawaii, Australien, Japan, Bali og Gili i foråret 2024 - sikke en oplevelse! Selve rejsen var godt planlagt med fede aktiviteter og udflugter, som man ikke nødvendigvis kunnet ha’ arrangeret, hvis man rejste på egen hånd."
-	  ,
-	/>
-
-	<!-- Dicte Jørgensen -->
-	<Trustpilot
-	  elevfoto="Card/dicte.png"
-	  ,
-	  elevalt="Dicte Jørgensen profilbillede"
-	  ,
-	  elevnavn="Dicte Jørgensen"
-	  ,
-	  dato="20 jun. 2024"
-	  ,
-	  elevanmeldelse="At have rejst verden rundt med höjskolendk, har uden tvivl været en af de bedste beslutninger nogensinde! At rejse rundt med så mange unge mennesker, og nogle fantastiske rejseledere gør, at man ser verden og de forskellige kulturer på en helt anden måde."
-	  ,
-	/>
-
-	<!--  -->
-	<Trustpilot
-	  elevfoto="Card/signe.png"
-	  ,
-	  elevalt="Signe N. Christensen profilbillede"
-	  ,
-	  elevnavn="Signe Christensen"
-	  ,
-	  dato="20 jun. 2024"
-	  ,
-	  elevanmeldelse="Höjskolendk giver en tryg og sikker rejseform. Man har altid sine rejseledere at læne sig op ad, hvilket er skønt når man ikke har særlig meget erfaring med verden uden for Danmark. På samme tid skaber man venskaber for livet, som virkelig er en gave i sig selv!"
-	  ,
-	/>
-  </div>
-</section>
-
-<!-- REJSE HØJSKOLE + HØJSKOLEOPHOLD I UDLANDET -->
-<section class="bg-beige-500 p-ml pt-xl">
-
-	<div class="p-sm grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-ml">
-		<Image src={Badeferie} alt="Piger der smiler på højskolen" class="md:max-w-md" />
-	  <div
-		class=" bg-beige-300 border border-black-50 rounded-md px-sm"
-	  >
-		<h2 class="pt-s">REJSE HØJSKOLE</h2>
-		<p class="md:pt-m pt-s">
-			Der venter dig et unikt rejseeventyr når du tager på højskole i udlandet, med et stærkt sammen-hold og fede rejseoplevelser. Med udgangspunkt i højskolens to grundværdier fællesskab og dannelse, kan du på højskole i udlandet bruge din sabbatår rejse  på fx frivilligt arbejde, vilde adventure- og naturoplevelser, lære sprog og spændende personlig udvikling der giver dig mere selvtillid, selvindsigt og selvværd. Glæd dig også til inspirerende undervisning, der levende og aktivt forener det lærende med det legende.
-		</p>
-		<p class="pt-s">
-			Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser med noget på hjerte”. Udover det fantastiske rejseeventyr handler vores højskoleophold i udlandet om dine drømme, mål og ønsker for livet. På inspirerende og aktiv vis flytter du dine grænser og bliver en endnu stærkere udgave af dig selv. Vi tror på, at du kommer hjem med mere mod på alt hvad livet byder dig og er mere afklaret omkring hvad en meningsfuld fremtid er for dig.
-		</p>
-		<p class="py-s ">
-			Tag på højskole i udlandet hvis du har du lyst til at opleve verden, udleve dine rejsedrømme i et skønt fællesskab, blive inspireret af dygtige og engagerede undervisere og få et eventyr for livet.		</p>
-	  </div>
-	</div>
-
-
-
-	<div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
-	  <div
-		class=" bg-beige-300 border border-black-50 rounded-md px-sm"
-	  >
-		<h2 class="pt-s">HØJSKOLEOPHOLD I UDLANDET</h2>
-		<p class="md:pt-m pt-s">
-			Når du rejser på højskole i udlandet med HÖJSKOLENDK.
-		</p>
-		
-		<ul class="py-s ">
-            <li >
-              <span class="text-orange-500">›</span> Bliver du en del af et fantastisk
-              fællesskab med et stærkt sammenhold
-            </li>
-            <li>
-              <span class="text-orange-500">›</span> Får du masser af vilde naturoplevelser,
-              adventure og spændende kulturmøder
-            </li>
-            <li>
-              <span class="text-orange-500">›</span> Opdager du nye og stærke sider
-              af dig selv, flytter grænser og får mere selvtillid
-            </li>
-            <li>
-              <span class="text-orange-500">›</span> Rejser du altid med danske passionerede
-              rejseledere og engagerede undervisere
-            </li>
-            <li>
-              <span class="text-orange-500">›</span> Får du et uforglemmeligt, unikt
-              og trygt rejseeventyr for livet
-            </li>
-          </ul>
-
-		<p class="py-s ">
-			Gå på opdagelse her på siden efter dit livs eventyr – på højskole i udlandet med HÖJSKOLENDK.
-		</p>
-		<p class="py-s ">
-			Med vores unikke kombination af højskole, grupperejser, rejseeventyr, frihed, kulturmøder og spændende undervisning, vil vi inspirere dig til at finde ind til hvad der er vigtigst for dig i livet – hvad du virkeligt brænder for og kan mærke er meningsfuldt – så du kan forfølge dine drømme.		</p>
-	  </div>
-	  <Image src={Dykker} alt="Piger der smiler på højskolen" class="md:max-w-md" />
-
-	</div>
-
-
+      <!--  -->
+      <Trustpilot
+        elevfoto="Card/signe.png"
+        ,
+        elevalt="Signe N. Christensen profilbillede"
+        ,
+        elevnavn="Signe Christensen"
+        ,
+        dato="20 jun. 2024"
+        ,
+        elevanmeldelse="Höjskolendk giver en tryg og sikker rejseform. Man har altid sine rejseledere at læne sig op ad, hvilket er skønt når man ikke har særlig meget erfaring med verden uden for Danmark. På samme tid skaber man venskaber for livet, som virkelig er en gave i sig selv!"
+        ,
+      />
+    </div>
   </section>
 
+  <!-- REJSE HØJSKOLE + HØJSKOLEOPHOLD I UDLANDET -->
+  <section class="bg-beige-500 p-ml pt-xl">
+    <div class="p-sm grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-ml">
+      <Image
+        src={Badeferie}
+        alt="Piger der smiler på højskolen"
+        class="md:max-w-md"
+      />
+      <div class="bg-beige-300 border border-black-50 rounded-md px-sm">
+        <h2 class="pt-s">REJSE HØJSKOLE</h2>
+        <p class="md:pt-m pt-s">
+          Der venter dig et unikt rejseeventyr når du tager på højskole i
+          udlandet, med et stærkt sammen-hold og fede rejseoplevelser. Med
+          udgangspunkt i højskolens to grundværdier fællesskab og dannelse, kan
+          du på højskole i udlandet bruge din sabbatår rejse på fx frivilligt
+          arbejde, vilde adventure- og naturoplevelser, lære sprog og spændende
+          personlig udvikling der giver dig mere selvtillid, selvindsigt og
+          selvværd. Glæd dig også til inspirerende undervisning, der levende og
+          aktivt forener det lærende med det legende.
+        </p>
+        <p class="pt-s">
+          Vores elever beskriver HÖJSKOLENDK som ”eventyrlige dannelsesrejser
+          med noget på hjerte”. Udover det fantastiske rejseeventyr handler
+          vores højskoleophold i udlandet om dine drømme, mål og ønsker for
+          livet. På inspirerende og aktiv vis flytter du dine grænser og bliver
+          en endnu stærkere udgave af dig selv. Vi tror på, at du kommer hjem
+          med mere mod på alt hvad livet byder dig og er mere afklaret omkring
+          hvad en meningsfuld fremtid er for dig.
+        </p>
+        <p class="py-s">
+          Tag på højskole i udlandet hvis du har du lyst til at opleve verden,
+          udleve dine rejsedrømme i et skønt fællesskab, blive inspireret af
+          dygtige og engagerede undervisere og få et eventyr for livet.
+        </p>
+      </div>
+    </div>
 
-    <!-- underviser -->
-    <section class="p-ml pt-xl">
-		<h2 class="text-center">MØD VORES REJSEGUIDES</h2>
-		<!-- cards -->
-		<div class="grid md:grid-cols-5 grid-cols-2 md:gap-m gap-s md:p-ml p-sm">
-		  <Underviser
-			underviserfoto="underviser/louise.webp"
-			underviserfotoalt="Underviser Louise s. bruun"
-			,
-			undervisernavn="Louise s. Bruun"
-			,
-			underviserinfo="Kontor, rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/asta.webp"
-			underviserfotoalt="Underviser Asta Nørby Dahl"
-			,
-			undervisernavn="Asta Nørby Dahl"
-			,
-			underviserinfo="Digital Media Manager"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/andreas.webp"
-			underviserfotoalt="Underviser Andreas Laforcel"
-			,
-			undervisernavn="Andreas Laforcel"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/henrik.webp"
-			underviserfotoalt="Underviser Henrik Hjørnevik"
-			,
-			undervisernavn="Henrik Hjørnevik"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/signe.webp"
-			underviserfotoalt="Underviser Signe A. Westh"
-			,
-			undervisernavn="Signe A. Westh"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/anne.webp"
-			underviserfotoalt="Underviser Anne Nørkjær"
-			,
-			undervisernavn="Anne Nørkjær"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/sarah.webp"
-			underviserfotoalt="Underviser Sarah Grønager"
-			,
-			undervisernavn="Sarah Grønager"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/christian.webp"
-			underviserfotoalt="Underviser Christian Frydkjær"
-			,
-			undervisernavn="Christian Frydkjær"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/mattias.webp"
-			underviserfotoalt="Underviser Mattias Yde"
-			,
-			undervisernavn="Mattias Yde"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/jakob.webp"
-			underviserfotoalt="Underviser Jakob Abu-Khalil"
-			,
-			undervisernavn="Jakob Abu-Khalil"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/SarahP.webp"
-			underviserfotoalt="Underviser Sarah Pope"
-			,
-			undervisernavn="Sarah Pope"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/AnneK.webp"
-			underviserfotoalt="Underviser Anne K. Mathiasen"
-			,
-			undervisernavn="Anne K. Mathiasen"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/AnneKP.webp"
-			underviserfotoalt="Underviser Anne Kathrine Grove"
-			,
-			undervisernavn="Anne Kathrine Grove"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/Alexander.webp"
-			underviserfotoalt="Underviser Alexander Poulsen"
-			,
-			undervisernavn="Alexander Poulsen"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-  
-		  <Underviser
-			underviserfoto="underviser/frederik.webp"
-			underviserfotoalt="Underviser Frederik Bruun"
-			,
-			undervisernavn="Frederik Bruun"
-			,
-			underviserinfo="Rejseleder og underviser"
-			,
-		  />
-		</div>
-	  </section>
-  
+    <div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
+      <div class="bg-beige-300 border border-black-50 rounded-md px-sm">
+        <h2 class="pt-s">HØJSKOLEOPHOLD I UDLANDET</h2>
+        <p class="md:pt-m pt-s">
+          Når du rejser på højskole i udlandet med HÖJSKOLENDK.
+        </p>
 
-	  <Intromoede />
+        <ul class="py-s">
+          <li>
+            <span class="text-orange-500">›</span> Bliver du en del af et fantastisk
+            fællesskab med et stærkt sammenhold
+          </li>
+          <li>
+            <span class="text-orange-500">›</span> Får du masser af vilde naturoplevelser,
+            adventure og spændende kulturmøder
+          </li>
+          <li>
+            <span class="text-orange-500">›</span> Opdager du nye og stærke sider
+            af dig selv, flytter grænser og får mere selvtillid
+          </li>
+          <li>
+            <span class="text-orange-500">›</span> Rejser du altid med danske passionerede
+            rejseledere og engagerede undervisere
+          </li>
+          <li>
+            <span class="text-orange-500">›</span> Får du et uforglemmeligt, unikt
+            og trygt rejseeventyr for livet
+          </li>
+        </ul>
 
+        <p class="py-s">
+          Gå på opdagelse her på siden efter dit livs eventyr – på højskole i
+          udlandet med HÖJSKOLENDK.
+        </p>
+        <p class="py-s">
+          Med vores unikke kombination af højskole, grupperejser, rejseeventyr,
+          frihed, kulturmøder og spændende undervisning, vil vi inspirere dig
+          til at finde ind til hvad der er vigtigst for dig i livet – hvad du
+          virkeligt brænder for og kan mærke er meningsfuldt – så du kan
+          forfølge dine drømme.
+        </p>
+      </div>
+      <Image
+        src={Dykker}
+        alt="Piger der smiler på højskolen"
+        class="md:max-w-md"
+      />
+    </div>
+  </section>
 
+  <!-- underviser -->
+  <section class="md:p-ml p-sm pt-xl">
+    <h2 class="text-center">MØD VORES REJSEGUIDES</h2>
+    <!-- cards -->
+    <div class="grid md:grid-cols-5 grid-cols-2 md:gap-m gap-s md:p-ml p-sm">
+      <Underviser
+        underviserfoto="underviser/louise.webp"
+        underviserfotoalt="Underviser Louise s. bruun"
+        ,
+        undervisernavn="Louise s. Bruun"
+        ,
+        underviserinfo="Kontor, rejseleder og underviser"
+        ,
+      />
 
+      <Underviser
+        underviserfoto="underviser/asta.webp"
+        underviserfotoalt="Underviser Asta Nørby Dahl"
+        ,
+        undervisernavn="Asta Nørby Dahl"
+        ,
+        underviserinfo="Digital Media Manager"
+        ,
+      />
 
+      <Underviser
+        underviserfoto="underviser/andreas.webp"
+        underviserfotoalt="Underviser Andreas Laforcel"
+        ,
+        undervisernavn="Andreas Laforcel"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/henrik.webp"
+        underviserfotoalt="Underviser Henrik Hjørnevik"
+        ,
+        undervisernavn="Henrik Hjørnevik"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/signe.webp"
+        underviserfotoalt="Underviser Signe A. Westh"
+        ,
+        undervisernavn="Signe A. Westh"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/anne.webp"
+        underviserfotoalt="Underviser Anne Nørkjær"
+        ,
+        undervisernavn="Anne Nørkjær"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/sarah.webp"
+        underviserfotoalt="Underviser Sarah Grønager"
+        ,
+        undervisernavn="Sarah Grønager"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/christian.webp"
+        underviserfotoalt="Underviser Christian Frydkjær"
+        ,
+        undervisernavn="Christian Frydkjær"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/mattias.webp"
+        underviserfotoalt="Underviser Mattias Yde"
+        ,
+        undervisernavn="Mattias Yde"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/jakob.webp"
+        underviserfotoalt="Underviser Jakob Abu-Khalil"
+        ,
+        undervisernavn="Jakob Abu-Khalil"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/SarahP.webp"
+        underviserfotoalt="Underviser Sarah Pope"
+        ,
+        undervisernavn="Sarah Pope"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/AnneK.webp"
+        underviserfotoalt="Underviser Anne K. Mathiasen"
+        ,
+        undervisernavn="Anne K. Mathiasen"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/AnneKP.webp"
+        underviserfotoalt="Underviser Anne Kathrine Grove"
+        ,
+        undervisernavn="Anne Kathrine Grove"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/Alexander.webp"
+        underviserfotoalt="Underviser Alexander Poulsen"
+        ,
+        undervisernavn="Alexander Poulsen"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+
+      <Underviser
+        underviserfoto="underviser/frederik.webp"
+        underviserfotoalt="Underviser Frederik Bruun"
+        ,
+        undervisernavn="Frederik Bruun"
+        ,
+        underviserinfo="Rejseleder og underviser"
+        ,
+      />
+    </div>
+  </section>
+
+  <!-- info/SEO tekst -->
+   <div class="p-s">
+  <section class="container mx-auto bg-beige-500 md:m-lg m-m md:p-ml p-s rounded-lg">
+    <details class="bg-beige-500">
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold ml-m">
+          Højskole i udlandet for unge mennesker
+        </h3>
+      </summary>
+      <div class="p-lg">
+        <p class="py-xs">
+          Drømmer du om at rejse på højskole i udlandet for unge? Når du rejser
+          med HÖJSKOLENDK, får du dit livs eventyr og vi garanterer dig masser
+          af fællesskab, fantastiske oplevelser og meningsfuld læring. Et
+          højskoleophold i udlandet er noget, du bare skal prøve mindst én gang
+          i dit liv – du vil aldrig fortryde, at du tog afsted. Og du kan glæde
+          dig til nye venskaber og oplevelser for livet.
+        </p>
+        <p class="py-xs">
+          Med HÖJSKOLENDK kan du komme på rejsende højskole i stort set alle
+          hjørner af verdenen. Drømmer du om smukke og vilde naturoplevelser på
+          Bali, Hawaii, Maldiverne eller i Australien? Storbyseventyr i New
+          York, Sydney, Tokyo, Bangkok eller Rio de Janeiro? Kulturelle
+          oplevelser og autentiske menneskemøder i Indien, Bolivia, Sri Lanka,
+          Japan eller Mexico? Fede adventure aktiviteter med masser af adrenalin
+          i New Zealand, Nepal, Ecuador eller Costa Rica? Vælg mellem et af
+          vores fantastiske højskoleophold i udlandet og lad verden gøre dig
+          endnu mere nysgerrig.
+        </p>
+        <p class="py-xs">
+          Du rejser altid med andre unge mennesker på din egen alder og danske
+          rejseledere og undervisere. På højskolerejsen kommer du ikke kun til
+          at opleve og forstå andre spændende kulturer. Rejserne giver også et
+          unikt indblik i dig selv, så du kommer hjem med mere selvtillid og
+          selvværd og står endnu stærkere som menneske.
+
+          <p class="py-xs">
+            At rejse med en højskole er ikke blot et eventyr ud i verden – det
+            er også en spændende rejse i forhold til dig og din personlige
+            udvikling.
+          </p>
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <section class="container mx-auto bg-beige-500 md:m-lg m-m md:p-ml p-s rounded-lg">
+    <details class="bg-beige-500">
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold  ml-m">
+          Uforglemmeligt højskoleophold i udlandet
+        </h3>
+      </summary>
+      <div class="p-lg">
+        <p class="py-xs">
+          HÖJSKOLENDK tilbyder alverdens skønne rejser og ophold og du kan både
+          komme på højskoleophold i udlandet i løbet af året eller på højskole i
+          udlandet i sommerferien. Begge muligheder er enormt populære blandt
+          vores skønne højskoleelever.
+        </p>
+        <p class="py-xs">
+          Højskoleophold i sommerferien er typisk kortere og varer ca. 5 uger.
+          På de højskole rejser oplever du flere lande og forskellige kulturer
+          og traditioner, langt fra det danske vi kender. Det er et oplagt
+          eventyr til dig, der gerne vil ud og rejse, møde andre unge mennesker
+          og udvikle dig som menneske i løbet af din sommerferie, inden du fx
+          starter på nyt studie eller job.
+        </p>
+        <p class="py-xs">
+          Vores højskoleophold i løbet af året varer mellem 2-3 måneder. De
+          rejser er oplagt for dig, der holder sabbatår og gerne vil ud og
+          opleve verdenen hvor du udvikler dig selv på et personligt plan.
+
+          <p class="py-xs">
+            Tag på højskole i udlandet med andre og få en uforglemmelig
+            oplevelse. Vi tør godt love dig, at det bliver dit livs eventyr!
+          </p>
+        </p>
+      </div>
+    </details>
+  </section>
+
+  <section class="container mx-auto bg-beige-500 md:m-lg m-m md:p-ml p-s rounded-lg">
+    <details class="bg-beige-500">
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold ml-m">
+          En rejse højskole fyldt med oplevelser
+        </h3>
+      </summary>
+      <div class="p-lg">
+        <p class="py-xs">
+          Vil du gerne på højskole i udlandet, tilbyder vi de mest attraktive
+          højskoleophold i udlandet, hvor du besøger flere skønne og spændende
+          lande og deltage i spændende og inspirerende undervisning og alverdens
+          fede aktiviteter.
+        </p>
+        <h5 class="py-xs ">Din højskole rejse kan blandt andet indeholde:</h5>
+
+        <div class="grid sm:grid-cols-[1fr_10fr]">
+          <Image src={Teambuild} alt="symbol" class="" />
+          <div>
+            <h5 class="pb-xs">Teambuilding</h5>
+            <p class="pb-s">
+              Hvorfor tage på et kedeligt kursus i Danmark, når du kan rejse ud
+              i verden og udvikle dig samtidig? Du rejser sammen med andre unge
+              voksne og lærer en hel masse om samarbejde, relationer,
+              fællesskab, konflikter, styrker og stærke teams. Du får ikke blot
+              rejse-erfaring på cv’et, men også et væld af brugbare redskaber
+              til studie eller karriere.
+            </p>
+          </div>
+        </div>
+
+        <hr class="py-xs" />
+
+        <div class="grid sm:grid-cols-[1fr_10fr]">
+          <Image src={Friviligt} alt="symbol" class="" />
+          <div>
+            <h5 class="pb-xs">Frivilligt arbejde & Kulturforståelse</h5>
+            <p class="pb-s">
+              Drømmer du om at lave frivilligt arbejde og gøre en forskel i et
+              andet land? Mange af vores højskole rejser inkluderer frivilligt
+              arbejde, hvor vi kommer helt tæt på de lokale. Det giver dig en
+              unik indsigt i landet, større forståelse for kulturen og måden man
+              lever på i de forskellige lande.
+            </p>
+          </div>
+        </div>
+
+        <hr class="py-xs" />
+
+        <div class="grid sm:grid-cols-[1fr_10fr]">
+          <Image src={Friuger} alt="symbol" class="" />
+          <div>
+            <h5 class="pb-xs">Friuger – et væld af muligheder</h5>
+            <p class="pb-s">
+              Efter spændende og lærerige undervisningsforløb, har vi – alt
+              efter hvilken højskole rejse du vælger – lagt én eller flere
+              friuger ind. Her har I mulighed for selv at tage styringen og
+              udforske dét land, kontinent eller ø-rige vi befinder os i.
+              Friugerne bliver brugt på forskellig vis og oftest deler holdet
+              sig op i lidt mindre grupper for at tage på eventyr – andre gange
+              rejser hele holdet sammen på en fed friuge.
+            </p>
+          </div>
+        </div>
+
+        <hr class="py-xs" />
+
+        <div class="grid sm:grid-cols-[1fr_10fr]">
+          <Image src={Kultur} alt="symbol" class="" />
+          <div>
+            <h5 class="pb-xs">Spændende kulturoplevelser</h5>
+            <p class="pb-s">
+				Kulturen er vigtig at opleve, når man befinder sig i et nyt land. Det giver dig både nogle rigtigt spændende oplevelser og menneske-møder, men også en unik indsigt, du ikke kan læse dig til i en bog eller se i et rejseprogram. På vores højskole ture kan du opleve alt fra ældgamle Hindu-templer i Indien, surf-kulturen på Hawaii, Mayaindianerne i Guatemala, de gamle inkaruiner i Mexico, buddhisme i Thailand, te-plantager i Sri Lanka og kakao-farme i Costa Rica.
+            </p>
+          </div>
+        </div>
+
+		<hr class="py-xs" />
+
+        <div class="grid sm:grid-cols-[1fr_10fr]">
+          <Image src={Naturoplevelser} alt="symbol" class="" />
+          <div>
+            <h5 class="pb-xs">Vilde naturoplevelser</h5>
+            <p class="pb-s">
+				Ingen rejse ud i verden uden eventyrlige og vilde naturoplevelser. Mange af de destinationer, hvor vi tager på højskoleophold, byder på enestående og overdådig natur. Det kan være alt fra snorkleture i Caribien, river rafting i Thailand, spotte brøleaber i Costa Ricas regnskove, gå på opdagelse i Inka-ruinerne i Mexico, trekke i Himalayas bjerge i Nepal, sejle kajak i marine nationalparker, dykke med manta rays på Hawaii, vandre i New Zealands fabelagtige nationalparker eller tage på safari i Sri Lanka og se leoparder, elefanter og bjørne. Alle vores rejser er fyldt med storslåede oplevelser, som du aldrig vil glemme.            </p>
+          </div>
+        </div>
+
+      </div>
+    </details>
+  </section>
+</div>
+  <Intromoede />
 </MainLayout>
 
 <style>
-	/* Flexbox horisontal scrol mobile og tablet*/
-		.trust {
-  display: flex; 
-  gap: 1rem;
-  overflow-x: auto; 
-  scrollbar-width: thin; 
-  -webkit-overflow-scrolling: touch; 
-  padding-bottom: 1rem; 
-}
-
-/* desktop*/
-@media (min-width: 1298px) {
+  /* Flexbox horisontal scrol mobile og tablet*/
   .trust {
-    display: grid; 
-    grid-template-columns: repeat(4, 1fr); 
-    overflow-x: visible; 
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    scrollbar-width: thin;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1rem;
   }
-}
+
+  /* desktop*/
+  @media (min-width: 1298px) {
+    .trust {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      overflow-x: visible;
+    }
+  }
 </style>
