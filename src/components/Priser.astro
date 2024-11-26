@@ -6,7 +6,8 @@ export interface Props {
   variant: "desktop_dark_orange" | "desktop_light_orange" | "desktop_blue"; // Three button styles
   href?: string; // Optional: Use for links
 }
-const { label, variant, href = "#" } = Astro.props;
+const { destination, pris, varighed, Introdage, Måned1, Måned2, Måned3 } =
+  Astro.props;
 ---
 
 <!-- Content -->
@@ -16,7 +17,7 @@ const { label, variant, href = "#" } = Astro.props;
       class="list-none flex flex-wrap items-center cursor-pointer hover:text-orange-500"
     >
       <h1 class="flex flex-1 p-4 font-semibold text-5xl ml-m">
-        CARIBIEN, HAWAII & MEXICO
+        {destination}
       </h1>
     </summary>
     <div
@@ -27,20 +28,22 @@ const { label, variant, href = "#" } = Astro.props;
         <div class="mb-s">
           <p>
             <strong>Pris:</strong>
-            <span class="text-orange-500 font-bold">67.900 Dkk</span>
+            <span class="text-orange-500 font-bold">{pris}</span>
           </p>
-          <p><strong>Varighed:</strong> 3 Måneder</p>
+          <p><strong>Varighed:</strong> {varighed}</p>
         </div>
 
         <h2 class="text-lg font-semibold mt-4">Information om turen:</h2>
         <ul>
-          <li class="mb-xxs"><strong>Introdage:</strong> New York City, USA</li>
-          <li class="mb-xxs"><strong>Måned 1:</strong> Oahu, Hawaii</li>
+          <li class="mb-xxs"><strong>Introdage:</strong>{Introdage}</li>
+          <li class="mb-xxs"><strong>Måned 1:</strong> {Måned1}</li>
           <li class="mb-xxs">
-            <strong>Måned 2:</strong> Playa del Carmen, Mexico
+            <strong>Måned 2:</strong>
+            {Måned2}
           </li>
           <li class="mb-xxs">
-            <strong>Måned 3:</strong> St. Croix & Puerto Rico, Caribien
+            <strong>Måned 3:</strong>
+            {Måned3}
           </li>
         </ul>
         <p class="mt-4">

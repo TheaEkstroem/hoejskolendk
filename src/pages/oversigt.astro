@@ -1,13 +1,168 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
-import Button from "../components/Button.astro";
-import Link from "../components/Link.astro";
-import { Image } from "astro:assets";
+import Intromoede from "../components/Intromoede.astro";
 import Priser from "../components/Priser.astro";
 ---
 
 <MainLayout title="Oversigt">
   <article>
-    <Priser />
+    <h1 class="container mx-auto">Priser - Højskole i udlandet</h1>
+
+    <div class="grid grid-cols-2 container mx-auto">
+      <div class="pr-m">
+        <p class="font-semibold pb-xs">
+          Her får du et klart overblik over vores eventyrlige højskoleophold i
+          udlandet.
+        </p>
+        <p>
+          Herunder finder du overskuelig information med forløb og datoer for
+          kommende ophold, priser og promo-videoer. På vores opholdssider finder
+          du en detaljeret præsentation af vores højskoleophold og kan læse
+          meget mere om program, adventure-aktiviteter, vores inspirerende fag
+          og undervisning, rejsebreve fra tidligere elever, hvad er inkluderet
+          og andet spændende.
+        </p>
+      </div>
+      <div>
+        <p class="font-semibold text-orange-500 pb-m">
+          Har du spørgsmål eller er nysgerrig?
+        </p>
+
+        <p>
+          Så er du altid velkommen til at ringe til os på tlf. 7027 9007 eller
+          skrive en mail på info@hojskolendk.dk
+        </p>
+      </div>
+    </div>
+
+    <Priser
+      destination="CARIBIEN, HAWAII & MEXICO"
+      ,
+      pris="67.900 DKK"
+      ,
+      varighed="3 måneder"
+      ,
+      Introdage="New York City, USA"
+      ,
+      Måned1="Oahu, Hawaii"
+      ,
+      Måned2="Playa del Carmen, Mexico"
+      ,
+      Måned3="St. Croix & Puerto Rico, Caribien"
+    />
+
+    <Priser
+      destination="AUSTRALIEN, NZ, BALI & GILI ISLANDS"
+      ,
+      pris="64.900 DKK"
+      ,
+      varighed="3 måneder"
+      ,
+      Introdage="Introdage"
+      ,
+      Måned1="Ubud, Bali & Gili Islands"
+      ,
+      Måned2="Byron Bay, Australien"
+      ,
+      Måned3="Queenstown, New Zealand"
+    />
+
+    <Priser
+      destination="COSTA RICA, MEXICO & COLOMBIA"
+      ,
+      pris="58.900 DKK"
+      ,
+      varighed="3 måneder"
+      ,
+      Introdage="Cancun, Mexico"
+      ,
+      Måned1="Playa Del Carmen, Rio Lagartos & Isla Holbox, Mexico"
+      ,
+      Måned2="San Jose, Puerto Viejo & Monteverde, Costa Rica"
+      ,
+      Måned3="Cartagena, La Boquilla, Minca & Bogota, Colombia"
+    />
+
+    <Priser
+      destination="INDIEN, NEPAL, THAILAND, VIETNAM & SRI LANKA"
+      ,
+      pris="61.500 DKK"
+      ,
+      varighed="3 måneder"
+      ,
+      Introdage="Kathmandu, Nepal"
+      ,
+      Måned1="Pokhara, Nepal + Dharamsala & New Delhi, Indien"
+      ,
+      Måned2="Sri Lanka & Vietnam"
+      ,
+      Måned3="Koh Lanta, Thailand"
+    />
+
+    <Priser
+      destination="HAWAII, AUSTRALIEN, JAPAN, BALI & GILI ISLANDS"
+      ,
+      pris="84.500 DKK"
+      ,
+      varighed="3 måneder"
+      ,
+      Introdage="New York City, USA"
+      ,
+      Måned1="Oahu, Hawaii"
+      ,
+      Måned2="Tokyo, Kyoto, Hiroshima & Osaka, Japan"
+      ,
+      Måned3="Ubud, Bali & Gili Islands"
+    />
+
+    <Priser
+      destination="MALDIVERNE, SRI LANKA, BALI & GILI ISLANDS"
+      ,
+      pris="52.500 DKK"
+      ,
+      varighed="2 måneder"
+      ,
+      Introdage="Introdage"
+      ,
+      Måned1="Dhiffushi, Maldiverne"
+      ,
+      Måned2="Dambulla, Kandy, Ella & Weligama, Sri Lanka"
+      ,
+      Måned3="Ubud, Bali & Gili Air"
+    />
+
+    <Priser
+      destination="BRASILIEN, BOLIVIA, COLOMBIA, ECUADOR, PERU & ARGENTINA"
+      ,
+      pris="74.900 DKK"
+      ,
+      varighed="3 måneder"
+      ,
+      Introdage="Introdage"
+      ,
+      Måned1="Bogotá, Minca, La Boquilla & Cartagena, Colombia"
+      ,
+      Måned2="La Paz & Uyuni, Bolivia"
+      ,
+      Måned3="Rio de Janeiro & Macumba Beach, Brasilien"
+    />
+
+    <Priser
+      destination="AUSTRALIEN, JAPAN, BALI & GILI ISLANDS"
+      ,
+      pris="54.900 DKK"
+      ,
+      varighed="2 måneder"
+      ,
+      Introdage="Introdage"
+      ,
+      Måned1="Bali & Gili Islands, Indonesien"
+      ,
+      Måned2="Byron Bay, Australien"
+      ,
+      Måned3="Tokyo, Kyoto, Osaka & Hiroshima, Japan"
+    />
   </article>
+
+  <Intromoede />
 </MainLayout>
