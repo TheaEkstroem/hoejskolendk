@@ -54,7 +54,8 @@ import { Image } from "astro:assets";
         </div>
       </div>
     </section>
-    <section class="pt-xl">
+
+    <section class="max:sm pt-xl">
       <div class="container mx-auto p-6 bg-beige-50 rounded-lg shadow-lg">
         <!-- Tabs -->
         <div class="flex justify-between border-b border-gray-300 mb-4">
@@ -87,7 +88,7 @@ import { Image } from "astro:assets";
 
         <!-- Content -->
         <div
-          class="grid md:grid-cols-2 gap-6 text-gray-700 bg-beige-500 mb-xl rounded-b-md border-black-100"
+          class="grid grid-cols-2 gap-6 text-gray-700 bg-beige-500 mb-xl rounded-b-md border-black-100"
         >
           <!-- Section 1 -->
           <div class="pt-m pr-m">
@@ -148,5 +149,109 @@ import { Image } from "astro:assets";
       </div>
     </section>
   </article>
+
+  <div class="md:hidden p-s bg-beige-500">
+    <section
+      class="container mx-auto bg-beige-100 md:m-lg m-m md:p-ml p-s rounded-lg"
+    >
+      <details class="bg-beige-100">
+        <summary
+          class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+        >
+          <h3 class="flex flex-1 p-4 font-semibold ml-m">Overblik</h3>
+        </summary>
+        <div class="p-lg">
+          <p class="pb-xs">
+            Tag med på drømmenes højskoleophold til et vaskeægte paradis med
+            verdens bedste strande, surfing, den smukkeste natur og sol hver
+            dag. Et rejseeventyr med masser af adventure på vulkaner, i regnskov
+            og ikke mindst på, i og under vandet. En fantastisk højskole i
+            udlandet.
+          </p>
+
+          <p class="pb-xs">
+            Som en perlesnor langt ude i Stillehavet ligger ø-gruppen Hawaii med
+            noget af planetens mest storslåede og vilde natur. Tropiske
+            regnskove, brusende floder, vilde vulkaner, brølende vandfald på
+            dramatiske bjerge og aloha-spirit har placeret Hawaii på enhvers
+            eventyrlystens sjæls travel-bucket-list. Glæd dig til at opleve
+            Honolulu, Waikiki Beach, de fantastiske hvide, sorte, røde og grønne
+            sandstrande, vulkan-kratere, berømte surf-spots, noget af verdens
+            bedste dykning (med bl.a. Manta Ray Nightdive), hvalsafari, delfiner
+            der leger i bugterne og hawaiiansk hula-fest.
+          </p>
+          <p class="pb-xs">
+            Mexico byder på en fantastisk kombination af sol, varme, eksotiske
+            og lækre strande, et perfekt klima og naturskønne omgivelser på
+            Yucatan halvøen.
+          </p>
+          <p class="pb-s">
+            Vi oplever den ældgamle mayakultur, med inka-ruiner og maya
+            indianere, og udforsker områdets fantastiske natur og dyreliv – over
+            og under vand. Vi bor downtown i Playa del Carmen, hvor der både er
+            plads til undervisning, chill-time og masser af lækkert
+            højskolefællesskab.
+          </p>
+          <p class="pb-xs">
+            Glæd dig til alle de fantastiske mad-oplevelser og hyggelige
+            gadekøkkener med det lækreste mexicanske mad.
+          </p>
+          <p class="pb-xs">
+            På St. Croix i Caribien kan du glæde dig til at opleve nogle af
+            verdens smukkeste strande med azurblåt vand og svajende palmer, der
+            sammen med øens eksotiske troperytmer, let kan kaldes et
+            barfods-paradis. Øen er fyldt med eventyr, tætbeklædt regnskov, fede
+            hike muligheder, gemte oaser og hvis du hopper i havet, kan du
+            udforske en helt ny verden af oplevelser med snorkel og maske.
+          </p>
+          <p class="pb-xs">
+            Der er rig mulighed for at se både havskildpadder, rev-hajer og
+            eksotiske fisk i alle regnbuens farver. Her kan man runde dagen af
+            med fødderne i det varme sand og skåle solen på gensyn fra en
+            vaskeægte beach-bar.
+          </p>
+        </div>
+      </details>
+    </section>
+    <details
+      class="container mx-auto bg-beige-100 md:m-lg m-m md:p-ml p-s rounded-lg"
+    >
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold ml-m">Program</h3>
+      </summary>
+    </details>
+
+    <details
+      class="container mx-auto bg-beige-100 md:m-lg m-m md:p-ml p-s rounded-lg"
+    >
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold ml-m">Inkluderet</h3>
+      </summary>
+    </details>
+
+    <details
+      class="container mx-auto bg-beige-100 md:m-lg m-m md:p-ml p-s rounded-lg"
+    >
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold ml-m">Fag</h3>
+      </summary>
+    </details>
+
+    <details
+      class="container mx-auto bg-beige-100 md:m-lg m-m md:p-ml p-s rounded-lg"
+    >
+      <summary
+        class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
+      >
+        <h3 class="flex flex-1 p-4 font-semibold ml-m">Kontakt</h3>
+      </summary>
+    </details>
+  </div>
   <Intromoede />
 </MainLayout>
