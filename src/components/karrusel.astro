@@ -1,0 +1,21 @@
+---
+const {
+  rejsefoto = "",
+  rejsefotoalt = "",
+  rejsenavn = "",
+} = Astro.props;
+---
+
+<section class="h-[400px] w[245px]" >
+
+  <a href="/oversigt" class=" rounded-md">
+
+ <div class="  bg-img bg-no-repeat bg-cover bg-center h-[400px] w[245px] rounded-md relative " style={`background-image: url(${rejsefoto});`}>
+    <!-- Content can go here -->
+
+    <h5 class="font-bold text-beige-50 h-1/4 bg-opacity-60 bg-blue-500 rounded-md p-xxs absolute bottom-[0px] left-0 right-0">{rejsenavn}</h5>
+
+  </div>
+</a>
+
+</section>

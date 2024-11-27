@@ -15,22 +15,31 @@ import Friuger from "../assets/images/friuger.png";
 import Naturoplevelser from "../assets/images/naturoplevelse.png";
 import Kultur from "../assets/images/kultur.png";
 import Friviligt from "../assets/images/friviligtarbejde.png";
+import Karrusel from "../components/karrusel.astro";
+import Suferpiger from "../assets/images/suferpiger.webp";
+import Drenge from "../assets/images/drenge.webp";
+import Skydive from "../assets/images/skydive.webp";
+
 ---
 
 <MainLayout title="Højskolendk">
   <!-- LANDING SEKTION -->
+
   <section
     class="relative w-full h-screen bg-cover bg-center"
     style="background-image: url('/src/assets/images/velkommen.webp');"
   >
-    <div class="relative z-10 flex flex-col items-center">
-      <h1 class="mt-m">HÖJSKOLENDK</h1>
+    <div class="relative z-10 flex flex-col items-center top-2xl">
+      <h1 class="mt-m text-7xl md:text-9xl">HÖJSKOLENDK</h1>
     </div>
 
     <div
-      class="relative z-10 flex flex-col items-start justify-center ml-lg mt-2xl"
+      class="absolute top-1/2 left-0 md:left-ml right-0
+ z-10 flex flex-col items-start justify-center ml-lg mt-8xl"
     >
-      <p class="mb-xs">En rejse for dig og din fremtid - Starter her!</p>
+      <h3 class="mb-xs text-beige-100 md:w-[420px]">
+        En rejse for dig og din fremtid - Starter her!
+      </h3>
 
       <Button
         label="FIND DIN REJSE »"
@@ -41,9 +50,9 @@ import Friviligt from "../assets/images/friviligtarbejde.png";
   </section>
 
   <!-- DIT LIVS EVENTYR! -->
-  <section class="bg-beige-500 p-ml pt-xl">
+  <section class="bg-beige-500 md:p-ml p-s pt-xl">
     <div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
-      <div class="bg-beige-300 border border-black-50 rounded-md px-sm">
+      <div class="bg-beige-300 border border-black-50 rounded-md px-s">
         <h2 class="pt-s">DIT LIVS EVENTYR!</h2>
         <p class="md:pt-ml pt-xs">
           HÖJSKOLENDK er en dansk højskole for unge i alderen ca. 18-30 år. Vi
@@ -71,10 +80,57 @@ import Friviligt from "../assets/images/friviligtarbejde.png";
     </div>
   </section>
 
+  <!-- Rejseeventyr -->
+  <section class="my-s md:my-xl">
+    <h1 class="text-center">REJSEEVENTYR</h1>
+    <h4 class="text-center">Hvilket ophold passer til dig?</h4>
+    <section class="grid grid-cols-5 gap-sm p-lg">
+      <Karrusel
+        rejsefoto="bil.webp"
+        rejsefotoalt="Billede fra rejseophold i Indien, Nepal, Thailand, Vietnam"
+        ,
+        rejsenavn="Indien, Nepal, Thailand, Vietnam"
+        ,
+      />
+
+      <Karrusel
+        rejsefoto="kina.webp"
+        rejsefotoalt="Billede fra rejseophold i Australien, Japan, Bali & Gili Islands"
+        ,
+        rejsenavn="Australien, Japan, Bali & Gili Islands"
+        ,
+      />
+
+      <Karrusel
+        rejsefoto="pigerdersmiler.webp"
+        rejsefotoalt="Billede fra rejseophold i Brasilien, Bolivia, Colombia, Ecuador, Peru"
+        ,
+        rejsenavn="Brasilien, Bolivia, Colombia, Ecuador, Peru"
+        ,
+      />
+
+      <Karrusel
+        rejsefoto="hawaii.webp"
+        rejsefotoalt="Billede fra rejseophold i Costa Rica, Mexico & Colombia"
+        ,
+        rejsenavn="Costa Rica, Mexico & Colombia"
+        ,
+      />
+
+      <Karrusel
+        rejsefoto="rejsende.webp"
+        rejsefotoalt="Billede fra rejseophold i Australien, NZ, Bali & Gili Islands"
+        ,
+        rejsenavn="Australien, NZ, Bali & Gili Islands"
+        ,
+      />
+    </section>
+  </section>
+
   <!-- infomøde -->
   <section class="bg-beige-500 py-lg">
     <h1 class="text-center">INFOMØDE</h1>
-    <div class="px-6xl">
+    <div class="md:px-6xl px-m">
       <p>
         Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure,
         vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores
@@ -155,9 +211,9 @@ import Friviligt from "../assets/images/friviligtarbejde.png";
   </section>
 
   <!-- trustpilot -->
-  <section>
+  <section class="my-xl">
     <div class="flex flex-col items-center p-sm">
-      <h2>Andmeldelser fra tidligere højskoleelever</h2>
+      <h1>Andmeldelser fra tidligere højskoleelever</h1>
       <Image
         src={Logotrustpilot}
         alt="TrustpilotLogo"
@@ -298,7 +354,7 @@ import Friviligt from "../assets/images/friviligtarbejde.png";
   </section>
 
   <!-- REJSE HØJSKOLE + HØJSKOLEOPHOLD I UDLANDET -->
-  <section class="bg-beige-500 p-ml pt-xl">
+  <section class="bg-beige-500 md:p-ml p-s pt-xl">
     <div class="p-sm grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-ml">
       <Image
         src={Badeferie}
@@ -384,39 +440,76 @@ import Friviligt from "../assets/images/friviligtarbejde.png";
     </div>
   </section>
 
-  <!-- billede med tilmeld -->
-  <section class="bg-gray-100 flex justify-center items-center">
-    <!-- Container -->
-    <div class="relative bg-white shadow-md overflow-hidden">
-      <!-- Background Image -->
-      <div class="relative">
-        <img
-          src="hopDrenge.webp"
-          alt="Two people jumping into water"
-          class="w-full object-cover"
-        />
+  <!-- rejsedagbog -->
+  <section class="my-s md:my-xl p-ml">
+    <h1 class="text-center">REJSEDAGBOG</h1>
+    <!-- Stine -->
+    <div class="grid md:grid-cols-3 grid-cols-2 place-items-center gap-xxs">
+      <div class="flex flex-col">
+        <h4 class="text-orange-500">Stine R.</h4>
+        <p class="md:w-[275px]">
+          Læs om Stine R.’s ophold på Caribien, Hawaii & Mexico hvor hun surfede
+          og oplevede den flotte kultur.
+        </p>
       </div>
+      <Image src={Suferpiger} alt="Piger der Sufer " class="md:max-w-md" />
 
-      <!-- Content -->
+      <div class="hidden md:block" ></div>
 
-      <div class="absolute top-[0px] right-[0px] bg-blue-500 bg-opacity-20 h-full">
-		       
-			 <p class="text-beige-50">
-          Hvis du er afklaret og klar på <span class="font-bold"
-            >højskoleeventyr</span
-          >, er det bare med at <span class="font-bold">tilmelde dig</span>.
+    </div>
+    <!-- Mathias -->
+    <div class="grid md:grid-cols-3 grid-cols-2 place-items-center gap-xxs mt-sm md:-mt-lg">
+      <div class="hidden md:block"></div>
+      <Image src={Drenge} alt="Drenge" class="md:max-w-md" />
+      <div class="flex flex-col">
+        <h4 class="text-orange-500">Mathias V.</h4>
+        <p class="md:w-[275px]">
+          Læs om Mathias Viberg’s rejse ophold til Australien, New Zealand, Bali
+          & Gili Islands, hvor han bestigede forskellige bjerge og oplevede
+          vilde naturoplevelser.
         </p>
-        <p class="text-beige-50">
-          Der bliver nemlig udsolgt på langt de fleste af vores ophold.
+      </div>
+    </div>
+    <!-- Sofie -->
+    <div class="grid md:grid-cols-3 grid-cols-2 place-items-center gap-xxs mt-sm md:-mt-lg">
+      <div class="flex flex-col">
+        <h4 class="text-orange-500">Sofie H. J.</h4>
+        <p class="md:w-[275px]">
+          Læs om Sofie H. J.’s ophold i Indien, Nepal, Thailand, Vietnam & Sri Lanka, hvor hun skydivede og fik andre vilde oplevelser med hjem i rygsækken. 
         </p>
-        <!-- Button -->
-        <Button
-          label="TILMELD DIG OPHOLD"
-          variant="desktop_light_orange"
-          href="/oversigt"
-        />
-	
+      </div>
+      <Image src={Skydive} alt="Piger der Skydiver " class="md:max-w-md" />
 
+      <div class="hidden md:block"></div>
+    </div>
+
+
+  </section>
+
+  <!-- billede med tilmeld -->
+  <section class="">
+    <div
+      class="bg-img bg-no-repeat bg-cover bg-center w-full h-[620px] relative"
+      style="background-image: url('hopDrenge.webp');"
+    >
+      <!-- Content can go here -->
+
+      <div
+        class="w-full h-2/5 md:w-2/5 md:h-full bg-opacity-50 bg-blue-500 p-sm absolute bottom-[0px] right-[0px]"
+      >
+        <div class="md:mt-9xl mt-xxs">
+          <h4 class="text-beige-50 pb-m">
+            Hvis du er afklaret og klar på <span class="font-bold"
+              >højskoleeventyr</span
+            >, er det bare med at <span class="font-bold">tilmelde dig</span>.
+            Der bliver nemlig udsolgt på langt de fleste af vores ophold.
+          </h4>
+          <Button
+            label="TILMELD DIG OPHOLD"
+            variant="desktop_light_orange"
+            href="/oversigt"
+          />
+        </div>
       </div>
     </div>
   </section>

@@ -11,16 +11,20 @@
 }
 
   h1{
+    color: #FF5701;
     font-size: 90px;
     font-family: "think", sans-serif;
   }
 
   h2{
+    color: #FF5701;
+
     font-family: "think", sans-serif;
     font-size: 58px;
 }
 
 h3{
+  
     font-family: "Montserrat", sans-serif;
     font-size: 35px;
     font-weight: 600;
