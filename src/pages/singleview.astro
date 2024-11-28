@@ -6,7 +6,7 @@ import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 ---
 
-<MainLayout title="Rejse">
+<MainLayout title="Opholdet">
   <article>
     <section class="pt-2xl">
      
@@ -46,12 +46,12 @@ import { Image } from "astro:assets";
           <hr class="py-xs" />
         </div>
         <div class="mt-6 flex md:flex-row flex-col md:justify-between gap-xs">
-          <Button variant="desktop_dark_orange" size="medium"
+          <Button variant="desktop_light_orange" size="medium"
             >NOTIFIKATIONER OM OPHOLDET</Button
           >
           <div class="flex flex-col md:flex-row  gap-xs">
-          <Button variant="desktop_light_orange" size="medium">INFOMØDE</Button>
-          <Button variant="desktop_blue" size="medium">LÆS MERE</Button>
+          <Button variant="desktop_blue" size="medium" href="/#info">INFOMØDE</Button>
+          <Button variant="desktop_dark_orange" size="medium" href="/forms">TILMELD DIG HER</Button>
         </div>
           <!-- <Button
             label="Notifikationer om opholdet"
