@@ -85,7 +85,7 @@ export default {
 
     /* Tilføj fonte herunder - husk også at tilføje webfonte i head-sektionen i MainLayout  */
     fontFamily: {
-      display: ["think", "sans serif"] /* eksempel på ekstra font */,
+      think: ["think", "sans serif"] /* eksempel på ekstra font */,
       montserrat: ["Montserrat", "sans-serif"],
       "open-sans": ["Open Sans", "sans-serif"],
     },
