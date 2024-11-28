@@ -24,9 +24,9 @@ const {
     <summary
       class="list-none flex flex-wrap items-center cursor-pointer hover:text-orange-500"
     >
-      <h1 class="md:flex flex-1 p-4 font-semibold text-2xl sm:text-5xl ml-m">
+      <h2 class="md:flex flex-1 p-4 font-semibold  ml-m">
         {destination}
-      </h1>
+      </h2>
     </summary>
     <div
       class="flex flex-row items-start justify-between md:flex-row m-m bg-beige-50 p-s rounded-md"
@@ -41,8 +41,8 @@ const {
           <p><strong>Varighed:</strong> {varighed}</p>
         </div>
 
-        <h2 class="text-lg font-semibold mt-4">Information om turen:</h2>
-        <ul>
+        <h3 class="text-lg font-semibold text-orange-500  py-xxs ">Information om turen:</h3>
+        <ul class="pb-sm gap-x-xs">
           <li class="mb-xxs"><strong>Introdage:</strong>{Introdage}</li>
           <li class="mb-xxs"><strong>Måned 1:</strong> {Måned1}</li>
           <li class="mb-xxs">
@@ -54,9 +54,11 @@ const {
             {Måned3}
           </li>
         </ul>
-        <p class="mt-4">
-          <strong>Afrejse:</strong> ✈️ Flybillet tur/retur er inkluderet.
+
+        <p class="pt-xxs">
+          <strong>Afrejse:</strong><span class="text-black-400">  ✈️ Flybillet tur/retur er inkluderet.</span>
         </p>
+
         <p class="mt-2">
           <ul>
             <li class="mb-xxs">
@@ -68,20 +70,25 @@ const {
         </p>
 
         <!-- Tilføjelse af knapper-->
-        <div class="mt-6 flex gap-4">
-          <Button
-            label="Notifikationer om opholdet"
+        <div class="pt-xxs flex gap-x-ml">
+          <Button  variant="desktop_dark_orange" size="medium">NOTIFIKATIONER OM OPHOLDET</Button>
+          <Button  variant="desktop_light_orange" size="medium" href="/#info">INFOMØDE</Button>
+          <Button variant="desktop_blue" size="medium" href="/singleview">LÆS MERE</Button>
+
+
+       <!--    <Button
+            label="NOTIFIKATIONER OM OPHOLDET"
             variant="desktop_dark_orange"
             href="#"
           />
-          <Button label="Infomøde" variant="desktop_light_orange" href="#" />
-          <Button label="Læs mere" variant="desktop_blue" href="#" />
+          <Button label="INFOMØDE" variant="desktop_light_orange" href="#" />
+          <Button label="LÆS MERE" variant="desktop_blue" href="/singleview" /> -->
         </div>
       </div>
 
       <!-- Image Section -->
       <div class="pl-5xl">
-        <img src="src/assets/images/cardVelkommen.webp" alt="rejsende" />
+        <img class="" src="src/assets/images/cardVelkommen.webp" alt="rejsende"  />
       </div>
     </div>
   </details>

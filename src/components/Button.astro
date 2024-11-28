@@ -1,4 +1,31 @@
 ---
+// Henter parametrene fra Astro.props
+const { href="#", target="_self", variant= "textlink", size = "inline" } = Astro.props; 
+
+//Definer den styling (Tailwind classes, der gør sig gældende for alle knapper
+const linkStyling = ""; 
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskellige varianter 
+const variantClasses = {
+    "textlink": "text-[#001D3D]",
+    "desktop_dark_orange": "bg-orange-500 text-beige-100 rounded-md hover:bg-orange-400 transition p-xs",
+    "desktop_light_orange": "bg-orange-400 text-beige-100 rounded-md  hover:bg-orange-300 transition p-xs",
+     "desktop_blue": "bg-blue-500 text-beige-100 rounded-md  hover:bg-blue-400 transition p-xs"
+};
+
+//Definer den styling (Tailwind classes), der gør sig gældende for de forskelligeog størrelser.
+const sizeClasses = {
+    "inline": "",
+    "large": "px-xs py-xs text-2xl",
+    "medium": "px-xxs py-xxs  text-lg",
+    "small": "px-xxs py-xxs text-sm"
+};
+---
+<!--Sæt classes for den pågældende knap sammen ved hjælp af Astros class:list -->
+<a href={href} target={target} class:list={[linkStyling, variantClasses[variant], sizeClasses[size]]}><slot /></a>
+
+
+<!-- ---
 export interface Props {
   label: string; // Text displayed on the button
   variant: "desktop_dark_orange" | "desktop_light_orange" | "desktop_blue"; // Three button styles
@@ -13,13 +40,14 @@ const { label, variant, href = "#" } = Astro.props;
   href={href}
   class={
     variant === "desktop_dark_orange"
-      ? "bg-orange-500 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-lg font-bold text-sm sm:text-base hover:bg-orange-400 transition"
+      ? "bg-orange-500 text-beige-100 py-xxs px-xxs sm:py-xs sm:px-xxs rounded-md font-bold text-sm sm:text-base hover:bg-orange-400 transition"
       : variant === "desktop_light_orange"
-      ? "bg-orange-400 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-lg font-bold text-sm sm:text-base hover:bg-orange-300 transition flex items-center gap-xxs sm:gap-xs"
+      ? "bg-orange-400 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-md font-bold text-sm sm:text-base hover:bg-orange-300 transition flex items-center gap-xxs sm:gap-xs"
       : variant === "desktop_blue"
-      ? "bg-blue-500 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-lg font-bold text-sm sm:text-base hover:bg-blue-400 transition"
+      ? "bg-blue-500 text-beige-100 py-xxs px-xs sm:py-xs sm:px-m rounded-md font-bold text-sm sm:text-base hover:bg-blue-400 transition"
       : ""
   }
 >
   {label}
 </a>
+ -->

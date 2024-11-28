@@ -3,12 +3,14 @@
 @tailwind utilities;
 
 @layer base {
- /*    @font-face {
-        font-family: "think", scroll-padding-inline-start: ;serif;
-        font-style: normal;
-        src: url(../font/think.regular.woff2) format('woff2');
-    } */
-}
+  
+  }
+
+  @font-face {
+    font-family: "think", serif;
+    font-style: normal;
+    src: url(think.regular.woff2) format('woff2');
+} 
 
   h1{
     color: #FF5701;
@@ -20,7 +22,7 @@
     color: #FF5701;
 
     font-family: "think", sans-serif;
-    font-size: 58px;
+    font-size: 65px;
 }
 
 h3{
@@ -53,7 +55,7 @@ h5{
     font-weight: 400;
   }
 
-  
+
   @media (max-width: 768px) {
     h1{
         font-size: 38px;

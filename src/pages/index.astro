@@ -41,16 +41,20 @@ import Skydive from "../assets/images/skydive.webp";
         En rejse for dig og din fremtid - Starter her!
       </h3>
 
+      <Button  variant="desktop_dark_orange" size="large">FIND DIN REJSE »</Button>
+
+<!-- 
       <Button
         label="FIND DIN REJSE »"
         variant="desktop_dark_orange"
         href="/oversigt"
-      />
+      /> -->
     </div>
   </section>
 
+
   <!-- DIT LIVS EVENTYR! -->
-  <section class="bg-beige-500 md:p-ml p-s pt-xl">
+  <section class="bg-beige-500 md:p-lg p-xxs pt-xl">
     <div class="p-sm grid grid-cols-1 sm:grid-cols-[2fr_1fr] gap-ml">
       <div class="bg-beige-300 border border-black-50 rounded-md px-s">
         <h2 class="pt-s">DIT LIVS EVENTYR!</h2>
@@ -81,10 +85,12 @@ import Skydive from "../assets/images/skydive.webp";
   </section>
 
   <!-- Rejseeventyr -->
-  <section class="my-s md:my-xl">
+  <section class="md:p-lg p-xxs my-s md:my-xl">
     <h1 class="text-center">REJSEEVENTYR</h1>
     <h4 class="text-center">Hvilket ophold passer til dig?</h4>
-    <section class="grid grid-cols-5 gap-sm p-lg">
+    <section class="grid md:grid-cols-5 gap-s p-lg">
+
+      
       <Karrusel
         rejsefoto="bil.webp"
         rejsefotoalt="Billede fra rejseophold i Indien, Nepal, Thailand, Vietnam"
@@ -128,9 +134,9 @@ import Skydive from "../assets/images/skydive.webp";
   </section>
 
   <!-- infomøde -->
-  <section class="bg-beige-500 py-lg">
+  <section class="md:p-lg p-xxs bg-beige-500 py-lg" id="info">
     <h1 class="text-center">INFOMØDE</h1>
-    <div class="md:px-6xl px-m">
+    <div class="md:px-2xl px-m">
       <p>
         Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure,
         vilde naturoplevelser og spændende kulturmøder så smut forbi et af vores
@@ -201,19 +207,20 @@ import Skydive from "../assets/images/skydive.webp";
         <hr class="" />
       </div>
       <div class="flex place-content-end pt-sm">
-        <Button
+        <Button  variant="desktop_dark_orange" size="medium" href="#infomøde">TILMELD DIG HER</Button>
+     <!--    <Button
           label="TILMELD DIG HER"
           variant="desktop_light_orange"
           href="#"
-        />
+        /> -->
       </div>
     </div>
   </section>
 
   <!-- trustpilot -->
-  <section class="my-xl">
+  <section class="my-xl md:p-m p-xxs">
     <div class="flex flex-col items-center p-sm">
-      <h1>Andmeldelser fra tidligere højskoleelever</h1>
+      <h2>ANDMELDELSER FRA TIDLIGERE ELEVER</h2>
       <Image
         src={Logotrustpilot}
         alt="TrustpilotLogo"
@@ -354,7 +361,7 @@ import Skydive from "../assets/images/skydive.webp";
   </section>
 
   <!-- REJSE HØJSKOLE + HØJSKOLEOPHOLD I UDLANDET -->
-  <section class="bg-beige-500 md:p-ml p-s pt-xl">
+  <section class="bg-beige-500 md:p-lg p-xxs pt-xl">
     <div class="p-sm grid grid-cols-1 sm:grid-cols-[1fr_2fr] gap-ml">
       <Image
         src={Badeferie}
@@ -441,7 +448,7 @@ import Skydive from "../assets/images/skydive.webp";
   </section>
 
   <!-- rejsedagbog -->
-  <section class="my-s md:my-xl p-ml">
+  <section class="my-s md:my-xl  md:p-lg p-xxs">
     <h1 class="text-center">REJSEDAGBOG</h1>
     <!-- Stine -->
     <div class="grid md:grid-cols-3 grid-cols-2 place-items-center gap-xxs">
@@ -504,18 +511,20 @@ import Skydive from "../assets/images/skydive.webp";
             >, er det bare med at <span class="font-bold">tilmelde dig</span>.
             Der bliver nemlig udsolgt på langt de fleste af vores ophold.
           </h4>
-          <Button
+          <Button  variant="desktop_dark_orange" size="medium"  href="/oversigt">TILMELD DIG OPHOLD</Button>
+
+<!--           <Button
             label="TILMELD DIG OPHOLD"
             variant="desktop_light_orange"
             href="/oversigt"
-          />
+          /> -->
         </div>
       </div>
     </div>
   </section>
 
   <!-- underviser -->
-  <section class="md:p-ml p-sm pt-xl">
+  <section class="md:p-lg p-xxs pt-xl">
     <h2 class="text-center">MØD VORES REJSEGUIDES</h2>
     <!-- cards -->
     <div class="grid md:grid-cols-5 grid-cols-2 md:gap-m gap-s md:p-ml p-sm">
@@ -672,7 +681,7 @@ import Skydive from "../assets/images/skydive.webp";
   </section>
 
   <!-- info/SEO tekst -->
-  <div class="p-s bg-beige-500">
+  <div class="md:p-sm p-xxs bg-beige-500">
     <section
       class="container mx-auto bg-beige-100 md:m-lg m-m md:p-ml p-s rounded-lg"
     >
@@ -874,6 +883,9 @@ import Skydive from "../assets/images/skydive.webp";
       </details>
     </section>
   </div>
+
+</section>
+
   <Intromoede />
 </MainLayout>
 
