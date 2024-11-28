@@ -19,6 +19,7 @@ import Karrusel from "../components/karrusel.astro";
 import Surferpiger from "../assets/images/surferpiger.webp";
 import Drenge from "../assets/images/drenge.webp";
 import Skydive from "../assets/images/skydive.webp";
+import Plus from "../assets/images/+.png";
 
 ---
 
@@ -30,7 +31,7 @@ import Skydive from "../assets/images/skydive.webp";
     style="background-image: url('/velkommen.webp');"
   >
     <div class="relative z-10 flex flex-col items-center top-2xl">
-      <h1 class="font-think mt-m text-7xl md:text-9xl">HÖJSKOLENDK</h1>
+      <h1 class=" mt-m text-7xl md:text-9xl">HÖJSKOLENDK</h1>
     </div>
 
     <div
@@ -86,7 +87,7 @@ import Skydive from "../assets/images/skydive.webp";
 
   <!-- Rejseeventyr -->
   <section class="md:p-lg p-xxs my-s md:my-xl">
-    <h1 class="font-think text-center">REJSEEVENTYR</h1>
+    <h1 class=" text-center">REJSEEVENTYR</h1>
     <h4 class="text-center">Hvilket ophold passer til dig?</h4>
     <section class="grid md:grid-cols-5 gap-s p-lg">
 
@@ -135,7 +136,7 @@ import Skydive from "../assets/images/skydive.webp";
 
   <!-- infomøde -->
   <section class="md:p-lg p-xxs bg-beige-500 py-lg" id="info">
-    <h1 class="font-think text-center">INFOMØDE</h1>
+    <h1 class=" text-center">INFOMØDE</h1>
     <div class="md:px-2xl px-m">
       <p>
         Hvis du drømmer om et fantastisk rejseeventyr med masser af adventure,
@@ -449,7 +450,7 @@ import Skydive from "../assets/images/skydive.webp";
 
   <!-- rejsedagbog -->
   <section class="my-s md:my-xl  md:p-lg p-xxs">
-    <h1 class="font-think text-center">REJSEDAGBOG</h1>
+    <h1 class=" text-center">REJSEDAGBOG</h1>
     <!-- Stine -->
     <div class="grid md:grid-cols-3 grid-cols-2 place-items-center gap-xxs">
       <div class="flex flex-col">
@@ -689,6 +690,8 @@ import Skydive from "../assets/images/skydive.webp";
         <summary
           class="list-none flex flex-wrap items-center cursor-pointer text-orange-500"
         >
+              <Image src={Plus} alt="+ " class="md:max-w-[50px]" />
+
           <h3 class="flex flex-1 p-4 font-semibold ml-m">
             Højskole i udlandet for unge mennesker
           </h3>
