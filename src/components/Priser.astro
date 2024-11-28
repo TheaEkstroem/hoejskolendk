@@ -1,5 +1,8 @@
 ---
 import Button from "../components/Button.astro"; // Import button component
+import { Image } from "astro:assets";
+import Plus from "../assets/images/+.png";
+
 
 /* export interface Props {
   label: string; // Text displayed on the button
@@ -19,17 +22,20 @@ const {
 ---
 
 <!-- Content -->
-<div class="container mx-auto bg-beige-500 m-xl p-xl rounded-lg">
-  <details class="bg-beige-500">
+<div class="container mx-auto bg-beige-500 m-xl p-sm md:p-ml rounded-lg">
+  <details class="bg-beige-500 p-xxs">
     <summary
       class="list-none flex flex-wrap items-center cursor-pointer hover:text-orange-500"
     >
-      <h2 class="md:flex flex-1 p-4 font-semibold  ml-m">
+    <div class="md:block hidden ">
+    <Image src={Plus} alt="+ " class="md:max-w-[50px]" />
+  </div>
+      <h2 class="md:flex flex-1  md:text-5xl font-semibold  md:ml-m">
         {destination}
       </h2>
     </summary>
     <div
-      class="flex flex-row items-start justify-between md:flex-row m-m bg-beige-50 p-s rounded-md"
+      class="flex flex-row items-start justify-between md:flex-row md:m-m bg-beige-50 p-xs md:p-sm rounded-md"
     >
       <!-- Information Section -->
       <div class="ml-10">
@@ -70,7 +76,7 @@ const {
         </p>
 
         <!-- Tilføjelse af knapper-->
-        <div class="pt-xxs flex gap-x-ml">
+        <div class="pt-xxs flex flex-col md:flex-row gap-s">
           <Button  variant="desktop_dark_orange" size="medium">NOTIFIKATIONER OM OPHOLDET</Button>
           <Button  variant="desktop_light_orange" size="medium" href="/#info">INFOMØDE</Button>
           <Button variant="desktop_blue" size="medium" href="/singleview">LÆS MERE</Button>
@@ -87,7 +93,7 @@ const {
       </div>
 
       <!-- Image Section -->
-      <div class="pl-5xl">
+      <div class="pl-5xl md:block hidden">
         <img class="" src="src/assets/images/cardVelkommen.webp" alt="rejsende"  />
       </div>
     </div>
