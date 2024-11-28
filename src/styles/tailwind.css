@@ -9,7 +9,7 @@
   @font-face {
     font-family: "think";
     font-style: normal;
-    src: url(think.regular.woff2) format('woff2');
+    src: url('/think.regular.woff2') format('woff2');
 } 
 
   h1{
