@@ -97,3 +97,10 @@ h5{
       }
 
   }
+  summary::-webkit-details-marker {
+    display: none; /* Removes the symbol for WebKit-based browsers */
+  }
+  
+  summary {
+    list-style: none; /* Removes the default symbol */
+  }
