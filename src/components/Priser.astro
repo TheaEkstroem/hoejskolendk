@@ -3,6 +3,10 @@ import Button from "../components/Button.astro"; // Import button component
 import { Image } from "astro:assets";
 import Plus from "../assets/images/+.png";
 
+import cardVelkommen from "../assets/images/cardVelkommen.webp";
+
+
+
 
 /* export interface Props {
   label: string; // Text displayed on the button
@@ -97,7 +101,8 @@ const {
 
       <!-- Image Section -->
       <div class="pl-5xl md:block hidden">
-        <img class="" src="src/assets/images/cardVelkommen.webp" alt="rejsende"  />
+        <Image src={cardVelkommen} alt="rejsende " class="" />
+
       </div>
     </div>
   </details>
